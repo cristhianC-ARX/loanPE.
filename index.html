@@ -10,7 +10,7 @@
 
     <style>
 
-/* Variables de color - Esquema naranja futurista */
+
 :root {
     --primary-color: #FF6B00;
     --primary-dark: #E05600;
@@ -41,7 +41,6 @@
     --transition-slow: 0.5s ease;
 }
 
-/* Reset y estilos globales */
 * {
     margin: 0;
     padding: 0;
@@ -64,7 +63,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
-/* Header futurista */
 header {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     border: none !important;
@@ -121,7 +119,6 @@ header .text-gray-600 {
     font-weight: 500;
 }
 
-/* Navegación con pestañas */
 .tab-button {
     padding: 15px 24px;
     font-weight: 600;
@@ -353,7 +350,6 @@ header .text-gray-600 {
     border-radius: 2px;
 }
 
-/* Campos de entrada */
 .input-field {
     padding: 12px 16px;
     border: 1px solid var(--border-light);
@@ -386,7 +382,6 @@ label {
     transition: all var(--transition-fast);
 }
 
-/* Grupos de entrada con prefijos/sufijos */
 .input-group {
     display: flex;
     align-items: stretch;
@@ -394,7 +389,6 @@ label {
     width: 100%;
 }
 
-/* Estilo mejorado para símbolos de moneda y porcentaje */
 .input-group-text {
     background: linear-gradient(to bottom, #FFFFFF, #F5F5F7);
     border: 1px solid var(--border-light);
@@ -409,7 +403,6 @@ label {
     box-shadow: inset 0 1px 2px rgba(255, 107, 0, 0.05);
 }
 
-/* Símbolo Q al inicio */
 .input-group-text:first-child {
     border-radius: var(--radius-sm) 0 0 var(--radius-sm);
     border-right: none;
@@ -417,7 +410,6 @@ label {
     padding: 0;
 }
 
-/* Símbolo % al final */
 .input-group-text:last-child {
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     border-left: none;
@@ -429,7 +421,6 @@ label {
     flex-grow: 1;
 }
 
-/* Ajustes específicos para campos con símbolo al inicio/final */
 .input-group .input-field:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -440,7 +431,6 @@ label {
     border-bottom-right-radius: 0;
 }
 
-/* Asegurar alineación perfecta con animación en hover */
 .input-group:hover .input-group-text {
     border-color: #C0C0C5;
     color: var(--primary-dark);
@@ -459,7 +449,6 @@ select.input-field {
     padding-right: 35px;
 }
 
-/* Botones */
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: white;
@@ -532,7 +521,6 @@ select.input-field {
     box-shadow: 0 6px 16px rgba(0, 184, 132, 0.35);
 }
 
-/* Buttons for delete, add, etc. */
 .text-blue-600 {
     color: var(--primary-color);
     display: inline-flex;
@@ -557,7 +545,6 @@ select.input-field {
     transform: rotate(90deg);
 }
 
-/* Botones de acciones (agregar gastos, etc.) */
 #agregar-gasto-legal, 
 #agregar-otro-gasto {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
@@ -600,7 +587,6 @@ select.input-field {
     transform: rotate(90deg);
 }
 
-/* Hipotecas previas */
 .hipoteca-previa {
     background: white;
     border-radius: var(--radius-md);
@@ -621,7 +607,6 @@ select.input-field {
     font-weight: 600;
 }
 
-/* Listas de gastos */
 #lista-gastos-legales, 
 #lista-otros-gastos {
     min-height: 150px;
@@ -653,7 +638,6 @@ select.input-field {
     border-radius: 10px;
 }
 
-/* Items de gastos */
 .flex.justify-between.items-center.p-2.mb-2.bg-white.border.rounded {
     background: white;
     border-radius: var(--radius-sm);
@@ -675,7 +659,6 @@ select.input-field {
     font-weight: 600;
 }
 
-/* Mensaje de "no hay gastos" */
 #no-gastos-legales, 
 #no-otros-gastos {
     display: flex;
@@ -689,7 +672,6 @@ select.input-field {
     border: 1px dashed var(--border-light);
 }
 
-/* Tablas */
 .responsive-table {
     overflow-x: auto;
     border-radius: var(--radius-md);
@@ -731,7 +713,6 @@ tbody tr:hover {
     background-color: rgba(255, 107, 0, 0.05);
 }
 
-/* Checkbox personalizado */
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -768,7 +749,6 @@ input[type="checkbox"]:focus {
     box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.15);
 }
 
-/* Pestaña de Resumen */
 #summary-tab {
     font-family: var(--font-primary);
 }
@@ -825,7 +805,6 @@ input[type="checkbox"]:focus {
     background-color: #d14800;
 }
 
-/* Pestaña de Información */
 #information-tab .bg-blue-600 {
     background-color: var(--primary-color);
 }
@@ -835,7 +814,6 @@ input[type="checkbox"]:focus {
     color: var(--primary-color);
 }
 
-/* Mejoras específicas para campos con símbolos Q y % */
 #simbolo-moneda, 
 input[id$="interes"] ~ .input-group-text,
 input[id$="corretaje"] ~ .input-group-text,
@@ -849,20 +827,17 @@ input[id$="legal"] ~ .input-group-text {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
-/* Resaltar los símbolos Q */
 #simbolo-moneda, 
 .input-group-text:first-child {
     font-weight: 700;
 }
 
-/* Efecto de enfoque para los símbolos */
 .input-field:focus + .input-group-text,
 .input-group-text + .input-field:focus {
     border-color: var(--primary-color);
     background: white;
 }
 
-/* Efectos de animación */
 @keyframes highlight {
     0% { background-color: transparent; }
     30% { background-color: rgba(255, 107, 0, 0.2); }
@@ -873,7 +848,6 @@ input[id$="legal"] ~ .input-group-text {
     animation: highlight 1.5s ease-in-out;
 }
 
-/* Footer */
 footer {
     background: linear-gradient(135deg, #2D2D2D, #1A1A1A);
     color: white;
@@ -888,7 +862,6 @@ footer p {
     font-size: 14px;
 }
 
-/* Diseño para dispositivos móviles */
 @media (max-width: 768px) {
     .tab-button {
         padding: 10px 15px;
@@ -947,7 +920,6 @@ footer p {
     }
 }
 
-/* Animaciones adicionales */
 .pulse {
     animation: pulse 2s infinite;
 }
@@ -964,7 +936,6 @@ footer p {
     }
 }
 
-/* Ajuste para tooltip */
 .tooltip .tooltip-text {
     background-color: var(--text-color);
     color: white;
@@ -986,32 +957,29 @@ footer p {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Hacer que el texto del logo sea naranja */
 #header-empresa {
-    color: #FF6B00 !important; /* Color naranja */
-    text-shadow: 0px 0px 1px rgba(0,0,0,0.1); /* Sutil sombra para mejor legibilidad */
+    color: #FF6B00 !important; 
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.1); 
   }
   
-  /* Opcional: Cambiar también el fondo del contenedor para mejor contraste */
   #header-empresa.text-gray-700 {
-    color: #FF6B00 !important; /* Asegura que el color se aplique incluso con otras clases */
+    color: #FF6B00 !important;
   }
   
-  /* Para el fondo del contenedor, si deseas cambiarlo */
+
   .bg-gray-200:has(#header-empresa) {
-    background-color: #f8f8f8; /* Un gris más claro */
+    background-color: #f8f8f8; 
   }
 
-  /* Cambiar el botón de calcular a naranja */
   #calculate-btn {
-    background-color: #FF6B00 !important; /* Naranja */
+    background-color: #FF6B00 !important; 
   }
   
   #calculate-btn:hover {
-    background-color: #E05600 !important; /* Naranja más oscuro al pasar el cursor */
+    background-color: #E05600 !important; 
   }
   
-  /* Asegurarse de que las clases Tailwind no sobreescriban nuestro estilo */
+
   .bg-green-600, .hover\:bg-green-700:hover {
     background-color: #FF6B00 !important;
   }
@@ -1020,34 +988,28 @@ footer p {
     background-color: #E05600 !important;
   }
 
-  /* Estilos para hacer el cursor (caret) naranja en campos de entrada */
 
-/* Navegadores modernos: Firefox, Chrome, etc. */
 input, textarea, select, [contenteditable="true"] {
     caret-color: #FF6B00 !important; /* Color naranja */
 }
 
-/* Para darle un poco de enfoque a los campos cuando se les hace clic */
 input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
     border-color: #FF6B00 !important;
     box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2) !important;
     outline: none !important;
 }
 
-/* Clase específica para tus campos de entrada de Tailwind */
 .input-field:focus {
     border-color: #FF6B00 !important;
     box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2) !important;
     outline: none !important;
 }
 
-/* Para mejorar la visibilidad del texto seleccionado */
 ::selection {
     background-color: rgba(255, 107, 0, 0.3) !important;
     color: #000 !important;
 }
 
-/* Para asegurar que el cambio de color del cursor se aplique en todo tipo de navegadores */
 @supports (-webkit-caret-color: #FF6B00) or (caret-color: #FF6B00) {
     input, textarea, select, [contenteditable="true"] {
         -webkit-caret-color: #FF6B00 !important;
@@ -1061,8 +1023,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <!-- Logo placeholder -->
-				<!-- Busca en el header y cambia la parte del logo por esto: -->
 				<div class="bg-gray-200 w-64 h-16 flex items-center justify-center mr-4 rounded">
 					<span id="header-empresa" class="text-lg font-bold text-gray-700"></span>
 				</div>
@@ -1074,9 +1034,7 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="container mx-auto px-4 py-6">
-      <!-- Tabs Navigation -->
 				<div class="mb-6 border-b border-gray-200">
 					<div class="flex">
 						<button class="tab-button active" data-tab="form">
@@ -1091,7 +1049,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 					</div>
 				</div>
 
-        <!-- Form Tab -->
         <div id="form-tab" class="tab-content active">
 				<div class="form-progress mb-8">
 					<div class="progress-step active cursor-pointer" data-step="1">1</div>
@@ -1100,7 +1057,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 					<div class="progress-step cursor-pointer" data-step="4">4</div>
 				</div>
 
-            <!-- Step 1: Información del Cliente -->
             <div class="form-step active">
                 <div class="bg-white p-6 mb-6 card">
                     <h2 class="text-xl font-bold mb-4 section-title">Información del Cliente</h2>
@@ -1195,7 +1151,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                 </div>
             </div>
 
-            <!-- Step 2: Información del Préstamo -->
             <div class="form-step">
                 <div class="bg-white p-6 mb-6 card">
                     <h2 class="text-xl font-bold mb-4 section-title">Información del Préstamo</h2>
@@ -1226,7 +1181,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                             <label class="block text-sm font-medium text-gray-700 mb-2">
                                 Capital Solicitado
                             </label>
-                            <!-- Por ejemplo, para el capital solicitado -->
 							<div class="input-group">
 								<span id="simbolo-moneda" class="input-group-text">Q</span>
 								<input type="number" id="capital" class="input-field w-full" value="">
@@ -1285,7 +1239,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                 </div>
             </div>
 
-            <!-- Step 3: Información de la Propiedad -->
             <div class="form-step">
                 <div class="bg-white p-6 mb-6 card">
                     <h2 class="text-xl font-bold mb-4 section-title">Información de la Propiedad</h2>
@@ -1395,7 +1348,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                     <h2 class="text-xl font-bold mb-4 section-title">Gastos</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Columna de Gastos Legales -->
                         <div class="gastos-panel">
                             <h3 class="text-lg font-semibold mb-3">Gastos Legales</h3>
                             <div class="mb-3">
@@ -1442,13 +1394,11 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
             <div class="mt-4">
                 <h4 class="text-md font-medium mb-2">Gastos Legales Seleccionados</h4>
                 <div id="lista-gastos-legales" class="border rounded-lg p-3 min-h-[150px] bg-gray-50">
-                    <!-- Aquí se añadirán los gastos seleccionados -->
                     <p class="text-gray-500 text-sm text-center pt-4" id="no-gastos-legales">No hay gastos legales seleccionados</p>
                 </div>
             </div>
         </div>
         
-        <!-- Solución simple para alinear costo y botón -->
         <div class="gastos-panel">
             <h3 class="text-lg font-semibold mb-3">Otros Gastos</h3>
             <div class="mb-3">
@@ -1500,7 +1450,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                 </div>
             </div>
             
-            <!-- Step 4: Desembolsos -->
             <div class="form-step">
                 <div class="bg-white p-6 mb-6 card">
                     <h2 class="text-xl font-bold mb-4 section-title">Desembolsos</h2>
@@ -1516,7 +1465,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 									</tr>
 								</thead>
 								<tbody class="bg-white divide-y divide-gray-200" id="desembolsos-container">
-									<!-- La tabla inicia vacía -->
 								</tbody>
 							</table>
 						</div>
@@ -1540,18 +1488,14 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
             </div>
         </div>
 
-<!-- Reemplazar todo el contenido dentro del div id="summary-tab" -->
 <div id="summary-tab" class="tab-content">
     <div class="bg-white shadow-md rounded-lg border border-gray-200 overflow-hidden">
-      <!-- Encabezado con borde superior -->
       <div class="border-t-4 border-blue-600 bg-gradient-to-r from-blue-50 to-white py-3 px-4 flex justify-between items-center">
         <h2 id="print-empresa" class="text-xl font-bold text-blue-700"></h2>
         <h3 class="text-sm font-semibold text-gray-600">PROPUESTA DE HIPOTECA</h3>
       </div>
       
-      <!-- Datos del cliente y porcentajes - Grid de 2 columnas -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 bg-gray-50 border-b border-gray-200">
-        <!-- Columna 1: Datos del cliente -->
         <div class="space-y-2">
           <div class="flex flex-col">
             <label class="text-xs text-gray-500">Cliente</label>
@@ -1576,7 +1520,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
           </div>
         </div>
         
-        <!-- Columna 2: Porcentajes -->
         <div class="grid grid-cols-3 gap-2">
           <div class="flex flex-col">
             <label class="text-xs text-gray-500">% Interés</label>
@@ -1610,9 +1553,7 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
         </div>
       </div>
       
-      <!-- Contenedor para las dos tablas -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4">
-        <!-- Desglose financiero (7 columnas) -->
         <div class="md:col-span-7 border border-gray-200 rounded-lg overflow-hidden">
           <div class="bg-gray-100 border-b border-gray-200 px-3 py-2 font-medium text-gray-700">
             Desglose Financiero
@@ -1620,7 +1561,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
           <div class="overflow-auto max-h-96">
             <table class="w-full text-sm">
                 <tbody>
-                    <!-- Grupo 1: Monto Solicitado y deducciones -->
                     <tr class="border-b border-gray-100">
                       <td class="py-1 px-3 font-medium">Monto Solicitado</td>
                       <td class="py-1 px-3 text-right font-medium bg-blue-50 text-blue-800" id="desglose-monto"></td>
@@ -1641,7 +1581,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                       <td class="py-1 px-3 pl-6"><span class="text-xs mr-1">(-)</span>Gastos Administrativos</td>
                       <td class="py-1 px-3 text-right" id="desglose-gastos-admin"></td>
                     </tr>
-                     <!-- Filas para gastos específicos de Coopexpress -->
                     <tr class="text-red-600" id="desglose-courier-row" style="display: none;">
                         <td class="py-1 px-3 pl-6"><span class="text-xs mr-1">(-)</span>Courier - Documentación</td>
                         <td class="py-1 px-3 text-right" id="desglose-courier">(75.00)</td>
@@ -1655,7 +1594,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                       <td class="py-1 px-3 text-right font-medium bg-gray-50" id="desglose-subtotal"></td>
                     </tr>
                     
-                    <!-- Grupo 2: Gastos de Inscripción -->
                     <tr class="border-t border-gray-200 bg-gray-50">
                       <td class="py-1 px-3 font-medium">Gastos de Inscripción de Hipoteca</td>
                       <td class="py-1 px-3 text-right font-medium text-red-600" id="desglose-gastos-inscripcion"></td>
@@ -1677,19 +1615,16 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                       <td class="py-1 px-3 text-right" id="desglose-timbres"></td>
                     </tr>
                     
-                    <!-- Grupo 3: Otros Gastos Legales -->
                     <tr class="border-t border-gray-200 bg-gray-50">
                       <td class="py-1 px-3 font-medium">Otros Gastos Legales</td>
                       <td class="py-1 px-3 text-right font-medium text-red-600" id="desglose-otros-gastos-legales"></td>
                     </tr>
                     
-                    <!-- Grupo 4: Otros gastos -->
                     <tr class="border-t border-gray-200 bg-gray-50">
                       <td class="py-1 px-3 font-medium">Otros gastos</td>
                       <td class="py-1 px-3 text-right font-medium text-red-600" id="desglose-otros-gastos"></td>
                     </tr>
                     
-                    <!-- Totales -->
                     <tr class="border-t border-gray-300 font-medium">
                       <td class="py-1 px-3">Total Gastos</td>
                       <td class="py-1 px-3 text-right text-red-700 bg-red-50" id="desglose-total-gastos"></td>
@@ -1703,7 +1638,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
           </div>
         </div>
         
-        <!-- Tabla de desembolsos (5 columnas) -->
         <div class="md:col-span-5 border border-gray-200 rounded-lg overflow-hidden">
           <div class="bg-gray-100 border-b border-gray-200 px-3 py-2 font-medium text-gray-700">
             Detalle de Desembolsos
@@ -1722,7 +1656,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                 </tr>
               </thead>
               <tbody id="desembolsos-print">
-                <!-- Las filas de desembolsos se generarán dinámicamente -->
               </tbody>
               <tfoot class="bg-gray-50 border-t border-gray-200">
                 <tr>
@@ -1735,7 +1668,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
             </table>
         </table>
     </div>
-    <!-- Nuevo campo para mostrar diferencia -->
     <div class="px-3 py-3 border-t border-gray-200 bg-yellow-50">
       <div class="flex justify-between items-center">
         <div class="font-medium text-gray-700">Diferencia contra cotización</div>
@@ -1747,7 +1679,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
         </div>
       </div>
       
-      <!-- Área de firmas -->
       <div class="grid grid-cols-2 gap-8 px-16 pb-8 pt-4 border-t border-gray-200 bg-gray-50">
         <div class="text-center">
           <div class="h-px w-48 bg-gray-300 mx-auto my-4"></div>
@@ -1759,18 +1690,9 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
         </div>
       </div>
       
-      <!-- Botones compactos en footer -->
        
       <div class="px-4 py-2 border-t border-gray-200 flex justify-end">
-        <!-- 
-        <button id="print-btn" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 py-1 rounded shadow-sm transition-all mr-2 flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0v3H7V4h6zm-5 7a1 1 0 112 0 1 1 0 01-2 0zm7 0a1 1 0 10-2 0 1 1 0 002 0z" clip-rule="evenodd" />
-          </svg>
-          Imprimir
-        </button>
-        -->
-        <!-- Nuevo botón de Tabla Desembolsos -->
+
   <button id="desembolsos-btn" class="bg-orange-600 hover:bg-orange-700 text-white text-sm px-3 py-1 rounded shadow-sm transition-all mr-2 flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
       <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
@@ -1786,7 +1708,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
       </div>
     </div>
   </div>
-					<!-- Nueva pestaña de Información -->
 			<div id="information-tab" class="tab-content">
 				<div class="bg-white p-6 mb-6 card">
 									<div class="relative mb-8">
@@ -1800,7 +1721,7 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 					</div>
 					</div>
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-						<!-- Primera fila -->
+
 					<div class="flex items-center mb-2">
 						<label class="w-1/3 font-semibold text-blue-800">Fecha</label>
 						<div class="w-2/3 border border-gray-300 p-3 bg-white rounded-md shadow-sm hover:shadow-md transition-shadow duration-300" id="info-fecha"></div>
@@ -1809,8 +1730,7 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 							<label class="w-1/3 font-semibold">Tipo de solicitud</label>
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-tipo-solicitud"></div>
 						</div>
-						
-						<!-- Segunda fila -->
+
 						<div class="flex items-center">
 							<label class="w-1/3 font-semibold">Empresa</label>
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-empresa"></div>
@@ -1820,7 +1740,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-moneda"></div>
 						</div>
 						
-						<!-- Tercera fila -->
 						<div class="flex items-center">
 							<label class="w-1/3 font-semibold">Tipo de Préstamo</label>
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-tipo-prestamo"></div>
@@ -1830,13 +1749,11 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-mes"></div>
 						</div>
 						
-						<!-- Cuarta fila -->
 						<div class="flex items-center col-span-2">
 							<label class="w-1/6 font-semibold">Cliente</label>
 							<div class="w-5/6 border border-gray-300 p-2 bg-gray-50" id="info-cliente"></div>
 						</div>
 						
-						<!-- Quinta fila -->
 						<div class="flex items-center">
 							<label class="w-1/3 font-semibold">DPI</label>
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-dpi"></div>
@@ -1846,13 +1763,11 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-nit"></div>
 						</div>
 						
-						<!-- Sexta fila -->
 						<div class="flex items-center col-span-2">
 							<label class="w-1/6 font-semibold">Asesor</label>
 							<div class="w-5/6 border border-gray-300 p-2 bg-gray-50" id="info-asesor"></div>
 						</div>
 						
-						<!-- Séptima fila -->
 						<div class="flex items-center">
 							<label class="w-1/3 font-semibold">Capital Solicitado</label>
 							<div class="flex items-center w-2/3">
@@ -1865,7 +1780,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-interes"></div>
 						</div>
 						
-						<!-- Octava fila -->
 						<div class="flex items-center">
 							<label class="w-1/3 font-semibold">% Corretaje</label>
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-corretaje"></div>
@@ -1875,7 +1789,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-gasto-admin"></div>
 						</div>
 						
-						<!-- Novena fila -->
 						<div class="flex items-center">
 							<label class="w-1/3 font-semibold">% Legal</label>
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-legal"></div>
@@ -1885,7 +1798,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-meses-adelantar"></div>
 						</div>
 						
-						<!-- Décima fila -->
 						<div class="flex items-center">
 							<label class="w-1/3 font-semibold">Cantidad de Fincas a Hipotecar</label>
 							<div class="w-2/3 border border-gray-300 p-2 bg-gray-50" id="info-cantidad-fincas"></div>
@@ -1922,7 +1834,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 					<h2 class="text-xl font-bold mb-6 mt-8 text-center bg-gray-800 text-white py-3">HIPOTECA PREVIA</h2>
 					
 					<div id="info-hipotecas-container" class="space-y-4">
-						<!-- Se llenarán dinámicamente las hipotecas previas -->
 					</div>
 					
 					<h2 class="text-xl font-bold mb-6 mt-8 text-center bg-gray-800 text-white py-3">DETALLE DE GASTOS</h2>
@@ -1943,10 +1854,8 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 								</tr>
 							</thead>
 							    <tbody id="gastos-legales-table" class="bg-white divide-y divide-gray-200">
-								<!-- Se llenarán dinámicamente los gastos -->
 							</tbody>
 							
-							<!-- ... Tu código de tabla aquí ... -->
 							<tfoot>
 								<tr class="border-t-2 border-gray-300">
 									<td colspan="3" class="px-4 py-2 text-right font-bold">Totales</td>
@@ -1988,18 +1897,15 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
-        // Función para mostrar u ocultar los gastos de Coopexpress
         function toggleCoopexpressExpenses() {
             const empresa = document.getElementById('empresa').value;
             const courierRow = document.getElementById('desglose-courier-row');
             const coopRow = document.getElementById('desglose-coop-row');
             
             if (!courierRow || !coopRow) {
-                // Si las filas no existen, crearlas primero
                 createCoopexpressRows();
             }
             
-            // Obtener las referencias nuevamente en caso de que se hayan creado
             const updatedCourierRow = document.getElementById('desglose-courier-row');
             const updatedCoopRow = document.getElementById('desglose-coop-row');
             
@@ -2011,22 +1917,17 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
             console.log(`Empresa: ${empresa}, Mostrar gastos Coopexpress: ${showRows}`);
         }
         
-        // Función para crear las filas de Coopexpress si no existen
         function createCoopexpressRows() {
-            // Buscar la tabla
             const tbody = document.querySelector('#summary-tab table tbody');
             if (!tbody) return;
             
-            // Buscar la fila después de la cual insertar (después de Gastos Administrativos)
             const adminRow = document.querySelector('#desglose-gastos-admin');
             if (!adminRow) return;
             
             const adminTR = adminRow.closest('tr');
             if (!adminTR) return;
             
-            // Verificar si ya existen las filas
             if (!document.getElementById('desglose-courier-row')) {
-                // Crear fila de Courier
                 const courierRow = document.createElement('tr');
                 courierRow.id = 'desglose-courier-row';
                 courierRow.className = 'text-red-600';
@@ -2035,15 +1936,12 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                     <td class="py-1 px-3 text-right" id="desglose-courier">(75.00)</td>
                 `;
                 
-                // Insertar después de gastos administrativos
                 adminTR.insertAdjacentElement('afterend', courierRow);
             }
             
-            // Verificar nuevamente por si acaba de ser creada
             const courierRow = document.getElementById('desglose-courier-row');
             
             if (!document.getElementById('desglose-coop-row') && courierRow) {
-                // Crear fila de Cuota Cooperativa
                 const coopRow = document.createElement('tr');
                 coopRow.id = 'desglose-coop-row';
                 coopRow.className = 'text-red-600';
@@ -2052,11 +1950,9 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                     <td class="py-1 px-3 text-right" id="desglose-coop">(100.00)</td>
                 `;
                 
-                // Insertar después de la fila de courier
                 courierRow.insertAdjacentElement('afterend', coopRow);
             }
             
-            // Inicialmente ocultar las filas
             const updatedCourierRow = document.getElementById('desglose-courier-row');
             const updatedCoopRow = document.getElementById('desglose-coop-row');
             
@@ -2064,9 +1960,7 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
             if (updatedCoopRow) updatedCoopRow.style.display = 'none';
         }
         
-        // Función para agregar event listeners a todos los campos del formulario
         function initFormEventListeners() {
-            // Lista de todos los IDs de los campos del formulario que afectan la pestaña de información
             const fieldIds = [
                 'fecha-formulario', 'tipo-solicitud', 'empresa', 'moneda', 'tipo-prestamo',
                 'cliente', 'dpi', 'nit', 'asesor', 'capital', 'interes', 'corretaje',
@@ -2074,27 +1968,22 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                 'tipo-impuesto', 'valor-rgp', 'valor-catastro', 'cancela-hipoteca'
             ];
             
-            // Agregar event listeners a cada campo
             fieldIds.forEach(id => {
                 const element = document.getElementById(id);
                 if (element) {
-                    // Diferentes tipos de eventos según el tipo de campo
                     if (element.type === 'checkbox') {
                         element.addEventListener('change', debounceUpdateInfo);
                     } else if (element.tagName === 'SELECT') {
                         element.addEventListener('change', debounceUpdateInfo);
                     } else {
-                        // Para inputs de texto y número
                         element.addEventListener('input', debounceUpdateInfo);
                         element.addEventListener('change', debounceUpdateInfo);
                     }
                 }
             });
             
-            // Agregar event listeners para hipotecas previas
             document.getElementById('add-hipoteca').addEventListener('click', debounceUpdateInfo);
             
-            // Usar delegación de eventos para detectar cambios en hipotecas previas
             document.addEventListener('change', function(e) {
                 const target = e.target;
                 if (target.closest('.hipoteca-previa') && 
@@ -2105,18 +1994,15 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                 }
             });
             
-            // También detectar cuando se elimina una hipoteca
             document.addEventListener('click', function(e) {
                 if (e.target.closest('.btn-eliminar-hipoteca')) {
                     setTimeout(debounceUpdateInfo, 100);
                 }
             });
             
-            // Actualizar cuando se agreguen o eliminen gastos
             document.getElementById('agregar-gasto-legal').addEventListener('click', debounceUpdateInfo);
             document.getElementById('agregar-otro-gasto').addEventListener('click', debounceUpdateInfo);
             
-            // Usar delegación de eventos para eliminar gastos
             document.addEventListener('click', function(e) {
                 if (e.target.closest('.eliminar-gasto') || 
                     e.target.closest('.eliminar-gasto-visual') ||
@@ -2126,41 +2012,31 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
             });
         }
         
-        // Función simple de debounce para evitar actualizaciones excesivas
         let debounceTimer;
         function debounceUpdateInfo() {
             clearTimeout(debounceTimer);
             debounceTimer = setTimeout(() => {
-                // Solo actualizar si la pestaña de información está activa
                 const infoTab = document.getElementById('information-tab');
                 if (infoTab && infoTab.classList.contains('active')) {
                     updateInformationTab();
                 } else {
-                    // Marcar que hay actualizaciones pendientes
                     window.pendingGastosUpdate = true;
                 }
             }, 300);
         }
         
 
-// Función para calcular la diferencia
 function calcularDiferenciaCotizacion() {
-  // Obtener el valor "recibe de esta hipoteca"
   const totalRecibeEl = document.getElementById('desglose-total-recibe');
-  // Obtener el total de desembolsos
   const totalDesembolsosEl = document.getElementById('total-desembolsos');
-  // Elemento donde se mostrará la diferencia
   const diferenciaEl = document.getElementById('diferencia-cotizacion');
   
   if (totalRecibeEl && totalDesembolsosEl && diferenciaEl) {
-    // Extraer valores numéricos (eliminar símbolos de moneda, paréntesis, etc.)
     const extraerValor = (texto) => {
       if (!texto) return 0;
-      // Si el formato es (123.45), extraer el número y retornarlo como negativo
       if (texto.startsWith('(') && texto.endsWith(')')) {
         return -parseFloat(texto.substring(1, texto.length - 1).replace(/,/g, ''));
       }
-      // Si es un número normal, convertirlo
       return parseFloat(texto.replace(/[^\d.-]/g, ''));
     };
     
@@ -2168,13 +2044,11 @@ function calcularDiferenciaCotizacion() {
     const totalDesembolsos = extraerValor(totalDesembolsosEl.textContent);
     const diferencia = totalRecibe - totalDesembolsos;
     
-    // Formatear la diferencia para mostrar
     const formatoDiferencia = diferencia.toLocaleString('es-GT', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
     });
     
-    // Mostrar la diferencia con el signo adecuado
     if (diferencia === 0) {
       diferenciaEl.textContent = '0.00';
       diferenciaEl.classList.remove('text-red-600');
@@ -2197,32 +2071,27 @@ function calcularDiferenciaCotizacion() {
         // Script principal
         document.addEventListener('DOMContentLoaded', function() {
 
-            // Este evento ya debe existir, añade la siguiente línea dentro de él
   const calculateBtn = document.getElementById('calculate-btn');
   if (calculateBtn) {
     const originalClick = calculateBtn.onclick;
     calculateBtn.onclick = function(e) {
       if (originalClick) originalClick.call(this, e);
-      // Ejecutar la función después de calcular la cotización
       setTimeout(calcularDiferenciaCotizacion, 300);
     };
   }
 
-            // Establecer la fecha actual
             const ahora = new Date();
             const fecha = new Date(ahora.getFullYear(), ahora.getMonth(), ahora.getDate());
             
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             const fechaFormateada = fecha.toLocaleDateString('es-GT', options);
             
-            // Asignar la fecha formateada
             const currentDateElement = document.getElementById('current-date');
             if (currentDateElement) currentDateElement.textContent = fechaFormateada;
             
             const printFechaElement = document.getElementById('print-fecha');
             if (printFechaElement) printFechaElement.textContent = fechaFormateada;
             
-            // Obtener YYYY-MM-DD de manera segura sin problemas de zona horaria
             const año = fecha.getFullYear();
             const mes = String(fecha.getMonth() + 1).padStart(2, '0');
             const día = String(fecha.getDate()).padStart(2, '0');
@@ -2242,16 +2111,12 @@ function calcularDiferenciaCotizacion() {
             
             
 
-            // Inicializar campos vacíos
             initializeEmptyFields();
             
-            // Establecer bandera de cotización calculada
             window.cotizacionCalculada = false;
         
-            // Asegurarse de crear las filas de Coopexpress
             createCoopexpressRows();
             
-            // Añadir evento para la pestaña de información
             const informationTabButton = document.querySelector('[data-tab="information"]');
             if (informationTabButton) {
                 informationTabButton.addEventListener('click', function() {
@@ -2259,90 +2124,67 @@ function calcularDiferenciaCotizacion() {
                 });
             }
             
-            // Añadir evento a empresa para togglear filas de Coopexpress
             const empresaSelect = document.getElementById('empresa');
             if (empresaSelect) {
                 empresaSelect.addEventListener('change', toggleCoopexpressExpenses);
             }
         });
         
-        // Redefinición completa del objeto FinancialCalculator
         const FinancialCalculator = {
-            // Calcular interés del mes en curso con fórmula exacta
             calculateCurrentMonthInterest: function(capital, ratePercentage, fechaActual = new Date()) {
-                // Asegurarnos de que la fecha esté normalizada para evitar problemas de zona horaria
-                // Crear una nueva fecha usando año, mes, día para eliminar la hora/minutos/segundos
                 let fecha = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), fechaActual.getDate());
                 
-                // Tasa decimal
                 const tasaDecimal = ratePercentage / 100;
                 
-                // Obtener último día del mes
                 const ultimoDiaMes = new Date(fecha.getFullYear(), fecha.getMonth() + 1, 0);
                 
-                // Calcular diferencia de días como lo haría Excel (incluyendo ambos extremos)
                 const fechaMS = fecha.getTime();
                 const ultimoDiaMS = ultimoDiaMes.getTime();
                 const diffMS = ultimoDiaMS - fechaMS;
                 const diasRestantes = Math.floor(diffMS / (1000 * 60 * 60 * 24)) + 1;
                 
-                // Días totales del mes
                 const diasTotalMes = ultimoDiaMes.getDate();
                 
-                // Aplicar la fórmula exacta que equivale a Excel:
-                // ((FIN.MES(fecha,0)-fecha+1) * capital * tasa / días_totales) * -1
                 const interesMesCurso = (diasRestantes * capital * tasaDecimal / diasTotalMes) * -1;
                 
-                // Redondear a 2 decimales como Excel
                 return Math.round(interesMesCurso * 100) / 100;
             },
             
-            // Calcular interés mensual completo
             calculateMonthlyInterest: function(capital, ratePercentage) {
                 return capital * (ratePercentage / 100);
             },
             
-            // Calcular gastos basados en porcentajes
             calculateFeeAmount: function(capital, percentage) {
                 return capital * (percentage / 100) * -1;
             },
             
 
             
-// Fórmula de registro
 calculateRegistro: function(capital, cantidadFincas) {
     let valorBase;
     if (capital < 10000) {
         valorBase = 160;
     } else {
-        // Nota: 0.15% es equivalente a 0.0015
         valorBase = (capital - 10000) * 0.0015 + 160;
     }
     
-    // En lugar de multiplicar (valorBase + 50) por cantidadFincas,
-    // ahora solo sumamos 50 por cada finca adicional
     return -(valorBase + (50 * cantidadFincas));
 },
             
-// Función corregida
 calculateTimbresFiscales: function(valorRGP, valorCatastro, tipoImpuesto) {
     console.log("DENTRO DE calculateTimbresFiscales:");
     console.log("- Valor RGP:", valorRGP);
     console.log("- Valor Catastro:", valorCatastro);
     console.log("- Tipo Impuesto:", tipoImpuesto);
     
-    // Asegurarse de que los valores son números válidos
     valorRGP = parseFloat(valorRGP) || 0;
     valorCatastro = parseFloat(valorCatastro) || 0;
     
-    // Obtener el máximo entre valorRGP y valorCatastro
     const valorMax = Math.max(valorRGP, valorCatastro);
     console.log("- Valor Máximo:", valorMax);
     
-    // Si no hay valores, retornar 0
     if (valorMax <= 0) return 0;
     
-    // Determinar porcentaje
     let porcentaje = 0;
     if (tipoImpuesto === 'IVA 12%') {
         porcentaje = 0.12;
@@ -2353,7 +2195,6 @@ calculateTimbresFiscales: function(valorRGP, valorCatastro, tipoImpuesto) {
     }
     console.log("- Porcentaje aplicado:", porcentaje);
     
-    // Calcular y retornar como valor negativo
     const resultado = -valorMax * porcentaje;
     console.log("- Resultado del cálculo:", resultado);
     
@@ -2361,7 +2202,6 @@ calculateTimbresFiscales: function(valorRGP, valorCatastro, tipoImpuesto) {
 },
 
 
-            // Calcular gastos de inscripción con fórmulas exactas
             calculateRegistrationFees: function(capital, cantidadFincas, valorRGP, valorCatastro, tipoImpuesto) {
     console.log("DENTRO DE calculateRegistrationFees:");
     console.log("- Capital:", capital);
@@ -2374,16 +2214,12 @@ calculateTimbresFiscales: function(valorRGP, valorCatastro, tipoImpuesto) {
     const porcentajeLegal = parseFloat(document.getElementById('legal').value) || 0;
 const honorarios = capital * (porcentajeLegal / 100) * -1;
     
-    // Timbre notarial - valor fijo de -355
     const timbreNotarial = -355;
     
-    // Registro según fórmula exacta
     const registro = this.calculateRegistro(capital, cantidadFincas);
     
-    // Timbres fiscales con la nueva fórmula
     const timbresFiscales = this.calculateTimbresFiscales(valorRGP, valorCatastro, tipoImpuesto);
     
-    // Total de gastos de inscripción
     const total = honorarios + timbreNotarial + registro + timbresFiscales;
     
     return {
@@ -2397,7 +2233,6 @@ const honorarios = capital * (porcentajeLegal / 100) * -1;
             
 
 calculateFinancialBreakdown: function(params) {
-    // Obtener los parámetros de forma segura
     const capital = params.capital;
         const interestRate = params.interestRate;
         const advanceMonths = params.advanceMonths;
@@ -2415,7 +2250,6 @@ calculateFinancialBreakdown: function(params) {
         const otherExpensesData = params.otherExpensesData || { total: 0, items: [] };
         
     
-    // Determinar los gastos específicos de Coopexpress (con signos NEGATIVOS)
     let courierFee = 0;
     let coopFee = 0;
     
@@ -2432,36 +2266,29 @@ calculateFinancialBreakdown: function(params) {
 
     
     
-    // Interés mensual completo (valor positivo para cálculos internos)
     const monthlyInterest = this.calculateMonthlyInterest(capital, interestRate);
     
-    // Interés del mes en curso (valor NEGATIVO)
     const currentMonthInterest = this.calculateCurrentMonthInterest(capital, interestRate, fechaActual);
     
-    // Intereses adelantados (valor NEGATIVO)
     const advanceInterest = monthlyInterest * advanceMonths * -1;
     
-    // Gastos basados en porcentajes (todos son valores NEGATIVOS)
     const brokerageFee = this.calculateFeeAmount(capital, brokerage);
     const administrationFee = this.calculateFeeAmount(capital, adminFee);
     const legalFeesAmount = this.calculateFeeAmount(capital, legalFee);
     
-    // CÁLCULO EXPLÍCITO DEL SUBTOTAL
-    // Comenzamos con el capital y luego sumamos todos los gastos (que son valores negativos)
     let subtotal = capital;
-        subtotal += currentMonthInterest;  // Suma el interés del mes en curso (negativo)
-        subtotal += advanceInterest;       // Suma los intereses adelantados (negativo)
-        subtotal += brokerageFee;          // Suma el corretaje (negativo)
-        subtotal += administrationFee;     // Suma los gastos administrativos (negativo)
+        subtotal += currentMonthInterest;  
+        subtotal += advanceInterest;       
+        subtotal += brokerageFee;          
+        subtotal += administrationFee;     
     
     
-    // Solo agregar gastos de Coopexpress si corresponde
+
     if (empresa === "Coopexpress") {
-        subtotal += courierFee;        // Suma gastos de courier si aplica (negativo)
-        subtotal += coopFee;           // Suma cuota cooperativa si aplica (negativo)
+        subtotal += courierFee;        
+        subtotal += coopFee;      
     }
     
-    // Mensaje de depuración detallado
     console.log("CÁLCULO DE SUBTOTAL PASO A PASO:");
     console.log("Capital inicial:", capital);
     console.log("+ Intereses del mes en curso:", currentMonthInterest);
@@ -2477,17 +2304,13 @@ calculateFinancialBreakdown: function(params) {
     
     console.log("= SUBTOTAL FINAL:", subtotal);
     
-    // Gastos de inscripción con fórmulas exactas
     const registrationFees = this.calculateRegistrationFees(capital, cantidadFincas, valorRGP, valorCatastro, tipoImpuesto);
     
-    // Total de gastos legales y otros gastos - solo si hay gastos agregados
     const totalLegalExpenses = legalExpenses && legalExpenses > 0 ? -Math.abs(legalExpenses) : 0;
     const totalOtherExpenses = otherExpenses && otherExpenses > 0 ? -Math.abs(otherExpenses) : 0;
     
-    // Total de todos los gastos
     const totalExpenses = registrationFees.total + totalLegalExpenses + totalOtherExpenses;
     
-    // Monto final a recibir
     const finalAmount = subtotal + totalExpenses;
     
     return {
@@ -2506,46 +2329,38 @@ calculateFinancialBreakdown: function(params) {
             totalOtherExpenses,
             totalExpenses,
             finalAmount,
-            legalExpensesData,    // Agregar los datos completos de gastos legales
-            otherExpensesData     // Agregar los datos completos de otros gastos
+            legalExpensesData,    
+            otherExpensesData     
     };
 }
         };
 
         
-        // Función auxiliar para normalizar fechas
         function normalizarFecha(fechaString) {
-            // Si es una cadena yyyy-mm-dd, normalizar para evitar problemas de zona horaria
             if (typeof fechaString === 'string' && fechaString.match(/^\d{4}-\d{2}-\d{2}$/)) {
                 const partes = fechaString.split('-');
-                // Crear la fecha usando componentes individuales (año, mes-1, día)
                 return new Date(parseInt(partes[0]), parseInt(partes[1])-1, parseInt(partes[2]));
             }
             return new Date(fechaString);
         }
         
-        // Funcionalidad de pestañas
         function initTabs() {
             const tabButtons = document.querySelectorAll('.tab-button');
             const tabContents = document.querySelectorAll('.tab-content');
             
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    // Desactivar todos los botones y contenidos
                     tabButtons.forEach(btn => btn.classList.remove('active'));
                     tabContents.forEach(content => content.classList.remove('active'));
                     
-                    // Activar el botón y contenido seleccionado
                     button.classList.add('active');
                     const tabId = button.getAttribute('data-tab');
                     document.getElementById(`${tabId}-tab`).classList.add('active');
                     
-                    // Si cambia a la pestaña de resumen y no se ha calculado, limpiar campos
                     if (tabId === 'summary' && !window.cotizacionCalculada) {
                         initializeEmptyFields();
                     }
                     
-                    // Si cambia a la pestaña de información, actualizar
                     if (tabId === 'information') {
                         setTimeout(() => {
                             updateInformationTab();
@@ -2553,7 +2368,6 @@ calculateFinancialBreakdown: function(params) {
                         }, 100);
                     }
                     
-                    // Si cambia a la pestaña de resumen, verificar si hay que mostrar gastos Coopexpress
                     if (tabId === 'summary') {
                         toggleCoopexpressExpenses();
                     }
@@ -2561,12 +2375,10 @@ calculateFinancialBreakdown: function(params) {
             });
         }
         
-        // Navegación del formulario multietapa
         function initFormSteps() {
             const steps = document.querySelectorAll('.form-step');
             const progressSteps = document.querySelectorAll('.progress-step');
             
-            // Agregar manejador de clics para los indicadores de paso
             progressSteps.forEach(step => {
                 step.addEventListener('click', function() {
                     const stepNumber = parseInt(this.getAttribute('data-step'));
@@ -2574,7 +2386,6 @@ calculateFinancialBreakdown: function(params) {
                 });
             });
             
-            // Botones de navegación
             document.getElementById('to-step-2').addEventListener('click', () => {
                 goToStep(2);
             });
@@ -2600,10 +2411,8 @@ calculateFinancialBreakdown: function(params) {
             });
             
             function goToStep(stepNumber) {
-                // Ocultar todos los pasos
                 steps.forEach(step => step.classList.remove('active'));
                 
-                // Actualizar estados de los indicadores de progreso
                 progressSteps.forEach((step, index) => {
                     if (index < stepNumber) {
                         step.classList.add('active');
@@ -2612,30 +2421,24 @@ calculateFinancialBreakdown: function(params) {
                     }
                 });
                 
-                // Mostrar el paso seleccionado
                 steps[stepNumber - 1].classList.add('active');
             }
         }
         
-        // Manejadores de eventos
         function initEventHandlers() {
-            // Actualizar nombre de empresa en resumen cuando cambie
             document.getElementById('empresa').addEventListener('change', function() {
                 document.getElementById('print-empresa').textContent = this.value.toUpperCase();
                 document.getElementById('header-empresa').textContent = this.value.toUpperCase();
             });
             
-            // Gestión de eliminación de desembolsos
             document.addEventListener('click', function(e) {
                 if (e.target.closest('.eliminar-desembolso')) {
                     const row = e.target.closest('tr');
                     const tbody = document.getElementById('desembolsos-container');
                     
-                    // Comprobar si es la última fila
                     if (tbody.children.length > 1) {
                         row.remove();
                     } else {
-                        // Si es la última fila, solo limpiar los campos
                         const selects = row.querySelectorAll('select');
                         const inputs = row.querySelectorAll('input[type="text"], input[type="number"]');
                         
@@ -2652,17 +2455,14 @@ calculateFinancialBreakdown: function(params) {
                 }
             });
             
-            // Funcionalidad para eliminar hipotecas
             document.addEventListener('click', function(e) {
                 if (e.target.closest('.btn-eliminar-hipoteca')) {
                     const hipotecaElement = e.target.closest('.hipoteca-previa');
                     const hipotecas = document.querySelectorAll('.hipoteca-previa');
                     
-                    // No eliminar si solo queda una
                     if (hipotecas.length > 1) {
                         hipotecaElement.remove();
                         
-                        // Renumerar las hipotecas restantes
                         document.querySelectorAll('.hipoteca-previa').forEach((el, idx) => {
                             el.querySelector('h3').textContent = `Hipoteca Previa ${idx + 1}`;
                             el.querySelector('.btn-eliminar-hipoteca').disabled = (idx === 0 && document.querySelectorAll('.hipoteca-previa').length === 1);
@@ -2671,7 +2471,6 @@ calculateFinancialBreakdown: function(params) {
                 }
             });
             
-            // Cambiar símbolo de moneda cuando cambie la selección
             document.getElementById('moneda').addEventListener('change', function() {
                 const simbolo = this.value === 'GTQ' ? 'Q' : '$';
                 const simbolosMoneda = document.querySelectorAll('#simbolo-moneda, .input-group-text');
@@ -2680,7 +2479,6 @@ calculateFinancialBreakdown: function(params) {
                 });
             });
             
-            // Checkbox para cancelar hipoteca previa
             const cancelaHipoteca = document.getElementById('cancela-hipoteca');
             const hipotecasContainer = document.getElementById('hipotecas-previas-container');
             
@@ -2688,7 +2486,6 @@ calculateFinancialBreakdown: function(params) {
                 hipotecasContainer.style.display = cancelaHipoteca.checked ? 'block' : 'none';
             });
             
-            // Botón para agregar hipoteca previa
             document.getElementById('add-hipoteca').addEventListener('click', () => {
                 const hipotecasPrevias = document.querySelectorAll('.hipoteca-previa');
                 const nuevaHipoteca = hipotecasPrevias[0].cloneNode(true);
@@ -2696,11 +2493,9 @@ calculateFinancialBreakdown: function(params) {
                 
                 nuevaHipoteca.querySelector('h3').textContent = `Hipoteca Previa ${numHipoteca}`;
                 
-                // Habilitar botón eliminar
                 const btnEliminar = nuevaHipoteca.querySelector('.btn-eliminar-hipoteca');
                 btnEliminar.disabled = false;
                 
-                // Limpiar valores
                 const inputs = nuevaHipoteca.querySelectorAll('input');
                 inputs.forEach(input => {
                     input.value = '';
@@ -2715,43 +2510,34 @@ calculateFinancialBreakdown: function(params) {
                 }
             });
             
-            // Botón para agregar desembolso
             document.getElementById('add-desembolso').addEventListener('click', () => {
                 addNewDesembolsoRow();
             });
             
-            // Botón para calcular cotización
             document.getElementById('calculate-btn').addEventListener('click', () => {
                 calculateMortgage();
                 window.cotizacionCalculada = true;
                 
-                // Cambiar a la pestaña de resumen
                 document.querySelector('[data-tab="summary"]').click();
             });
             
 
             
-            // Botón para guardar como PDF (real)
 document.getElementById('save-pdf-btn').addEventListener('click', (e) => {
     e.preventDefault();
     generarPDF();
 });
         }
         
-        // Función para aplicar formato al DPI (13 dígitos en formato xxxx xxxxx xxxx)
         function initDPIFormat() {
             const dpiInput = document.getElementById('dpi');
             
             if (dpiInput) {
-                // Aplicar máscara al DPI
                 dpiInput.addEventListener('input', function(e) {
-                    // Obtener solo los dígitos del valor actual
                     const digitsOnly = this.value.replace(/\D/g, '');
                     
-                    // Limitar a 13 dígitos
                     const trimmed = digitsOnly.substring(0, 13);
                     
-                    // Aplicar formato
                     let formatted = trimmed;
                     if (trimmed.length > 4) {
                         formatted = trimmed.substring(0, 4) + " " + trimmed.substring(4);
@@ -2760,25 +2546,19 @@ document.getElementById('save-pdf-btn').addEventListener('click', (e) => {
                         formatted = formatted.substring(0, 10) + " " + formatted.substring(10);
                     }
                     
-                    // Asignar el valor formateado
                     this.value = formatted;
                 });
                 
-// Validar al perder el foco
 dpiInput.addEventListener('blur', function() {
     const digitsOnly = this.value.replace(/\D/g, '');
     if (digitsOnly.length > 0 && digitsOnly.length < 13) {
         mostrarAlertaDPI('El DPI debe tener exactamente 13 dígitos');
-        // No es necesario llamar a this.focus() aquí, ya que
-        // la función mostrarAlertaDPI lo hará automáticamente al cerrar
     }
 });
             }
         }
         
-        // Función para mostrar una alerta personalizada que sí se cierra correctamente
 function mostrarAlertaDPI(mensaje) {
-    // Crear el contenedor de la alerta
     const alerta = document.createElement('div');
     alerta.style.position = 'fixed';
     alerta.style.top = '0';
@@ -2791,7 +2571,6 @@ function mostrarAlertaDPI(mensaje) {
     alerta.style.justifyContent = 'center';
     alerta.style.zIndex = '9999';
     
-    // Crear el contenido de la alerta
     const contenido = document.createElement('div');
     contenido.style.backgroundColor = '#222';
     contenido.style.color = 'white';
@@ -2801,7 +2580,6 @@ function mostrarAlertaDPI(mensaje) {
     contenido.style.width = '400px';
     contenido.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
     
-    // Título de la alerta
     const titulo = document.createElement('h3');
     titulo.textContent = 'Esta página dice';
     titulo.style.marginTop = '0';
@@ -2810,12 +2588,10 @@ function mostrarAlertaDPI(mensaje) {
     titulo.style.color = 'white';
     titulo.style.marginBottom = '15px';
     
-    // Mensaje de la alerta
     const mensajeElement = document.createElement('p');
     mensajeElement.textContent = mensaje;
     mensajeElement.style.marginBottom = '20px';
     
-    // Botón Aceptar
     const boton = document.createElement('button');
     boton.textContent = 'Aceptar';
     boton.style.backgroundColor = '#4B50E6';
@@ -2826,27 +2602,21 @@ function mostrarAlertaDPI(mensaje) {
     boton.style.cursor = 'pointer';
     boton.style.float = 'right';
     
-    // Agregar evento de clic al botón para cerrar la alerta
     boton.addEventListener('click', function() {
         document.body.removeChild(alerta);
-        // Enfocar de nuevo el campo DPI
         const dpiInput = document.getElementById('dpi');
         if (dpiInput) dpiInput.focus();
     });
     
-    // Armar la alerta
     contenido.appendChild(titulo);
     contenido.appendChild(mensajeElement);
     contenido.appendChild(boton);
     alerta.appendChild(contenido);
     
-    // Mostrar la alerta
     document.body.appendChild(alerta);
 }
 
-        // Función para actualizar la pestaña de información
         function updateInformationTab() {
-            // Obtener valores del formulario con verificación de nulos
             const fechaField = document.getElementById('fecha-formulario');
             const tipoSolicitudField = document.getElementById('tipo-solicitud');
             const empresaField = document.getElementById('empresa');
@@ -2867,28 +2637,22 @@ function mostrarAlertaDPI(mensaje) {
             const valorRgpField = document.getElementById('valor-rgp');
             const valorCatastroField = document.getElementById('valor-catastro');
             
-            // Obtener el símbolo de moneda
             const moneda = monedaField?.value || 'GTQ';
             const simboloMoneda = moneda === 'GTQ' ? 'Q' : '$';
             
-            // Fecha actual si no hay fecha en el formulario
             let fechaActual = new Date();
             if (fechaField && fechaField.value) {
                 fechaActual = new Date(fechaField.value);
             }
             
-            // Formatear la fecha para mostrar
             const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
             const fechaFormateada = fechaActual.toLocaleDateString('es-GT', opciones);
             
-            // Verificar y asignar elementos de información
             const infoFecha = document.getElementById('info-fecha');
     if (infoFecha) infoFecha.textContent = fechaFormateada;
     
-    // Obtener el número del mes actual para mostrar
     const numeroMes = fechaActual.getMonth() + 1;
   
-    // Asignar todos los valores a los elementos correspondientes
     setInfoText('info-tipo-solicitud', tipoSolicitudField?.value || '');
     setInfoText('info-empresa', empresaField?.value || '');
     setInfoText('info-moneda', monedaField?.value === 'GTQ' ? 'Quetzales' : 'Dólares');
@@ -2909,40 +2673,32 @@ function mostrarAlertaDPI(mensaje) {
     setInfoText('info-valor-rgp', formatNumber(parseFloat(valorRgpField?.value) || 0));
     setInfoText('info-valor-catastro', formatNumber(parseFloat(valorCatastroField?.value) || 0));
     
-    // Establecer símbolos de moneda
     const simbolosMoneda = document.querySelectorAll('#info-moneda-simbolo, #info-moneda-simbolo2, #info-moneda-simbolo3');
     simbolosMoneda.forEach(el => {
         if (el) el.textContent = simboloMoneda;
     });
     
-    // Actualizar título de tipo de préstamo
     const tipoPrestamoDom = document.getElementById('info-tipo-prestamo-titulo');
     if (tipoPrestamoDom && tipoPrestamoField) {
         tipoPrestamoDom.textContent = tipoPrestamoField.value.toUpperCase();
     }
     
-    // Actualizar sección de hipotecas previas
     updateInfoHipotecas(simboloMoneda);
     
-    // Función auxiliar para establecer texto en elementos
     function setInfoText(id, value) {
         const element = document.getElementById(id);
         if (element) element.textContent = value;
     }
     
-    // Actualizar tabla de gastos
     updateGastosInfoTable();
 }
 
-// Función para actualizar la sección de hipotecas previas en la pestaña de información
 function updateInfoHipotecas(simboloMoneda) {
     const container = document.getElementById('info-hipotecas-container');
     if (!container) return;
     
-    // Limpiar el contenedor actual
     container.innerHTML = '';
     
-    // Verificar si se cancelan hipotecas
     const cancelaHipoteca = document.getElementById('cancela-hipoteca').checked;
     
     if (!cancelaHipoteca) {
@@ -2953,7 +2709,6 @@ function updateInfoHipotecas(simboloMoneda) {
         return;
     }
     
-    // Obtener todas las hipotecas previas
     const hipotecas = document.querySelectorAll('.hipoteca-previa');
     
     hipotecas.forEach((hipoteca, index) => {
@@ -2994,7 +2749,6 @@ function updateInfoHipotecas(simboloMoneda) {
         }
     });
     
-    // Si no se agregó ninguna hipoteca válida
     if (container.children.length === 0) {
         const noHipotecas = document.createElement('div');
         noHipotecas.className = 'text-gray-500 text-center py-4';
@@ -3003,24 +2757,18 @@ function updateInfoHipotecas(simboloMoneda) {
     }
 }
 
-// Función para actualizar la tabla de gastos en la pestaña de información
 function updateGastosInfoTable() {
-    // Esta función puede usar los datos de gastosStore para actualizar la tabla
-    // Esto ya está implementado en gastosStore.renderInfoTable()
     if (typeof gastosStore !== 'undefined' && gastosStore.renderInfoTable) {
         gastosStore.renderInfoTable();
     }
 }
 
-// Almacén global de gastos
 const gastosStore = {
     items: [],
     
-    // Añadir un nuevo gasto
     addGasto: function(tipo, cantidad, honorario, reembolso, retenido, reemborsoCTP) {
-        const id = Date.now(); // ID único basado en timestamp
+        const id = Date.now(); 
         
-        // Total es la suma de todos los valores (sin multiplicar por cantidad)
         const total = honorario + reembolso + retenido + reemborsoCTP;
         
         const gasto = {
@@ -3039,20 +2787,17 @@ const gastosStore = {
         return id;
     },
     
-    // Eliminar un gasto por su ID
     removeGasto: function(id) {
         this.items = this.items.filter(item => item.id !== id);
         this.renderAll();
     },
     
-    // Renderizar en todos los lugares necesarios
     renderAll: function() {
         this.renderFormTable();
         this.renderVisualPanel();
         this.renderInfoTable();
     },
     
-    // Renderizar en la tabla del formulario
     renderFormTable: function() {
         const table = document.getElementById('gastos-legales-table');
         if (!table) return;
@@ -3062,12 +2807,10 @@ const gastosStore = {
         this.items.forEach((gasto, index) => {
             const row = document.createElement('tr');
             
-            // Función para formatear valores (mostrar guion si es cero)
             const formatValue = (value) => {
                 return value === 0 ? '-' : value.toFixed(2);
             };
             
-            // Calcular el total multiplicado por cantidad
             const totalCalculado = (gasto.honorario + gasto.reembolso + gasto.retenido + gasto.reemborsoCTP) * gasto.cantidad;
             
             row.innerHTML = `
@@ -3091,12 +2834,10 @@ const gastosStore = {
         this.updateTotales();
     },
     
-    // Renderizar en el panel visual
     renderVisualPanel: function() {
         const panel = document.getElementById('lista-gastos-legales');
         if (!panel) return;
         
-        // Limpiar panel excepto mensaje de "no hay gastos"
         const noGastosMsg = document.getElementById('no-gastos-legales');
         panel.innerHTML = '';
         if (noGastosMsg) panel.appendChild(noGastosMsg);
@@ -3112,10 +2853,8 @@ const gastosStore = {
             const gastoItem = document.createElement('div');
             gastoItem.className = 'flex justify-between items-center p-2 mb-2 bg-white border rounded';
             
-            // Calcular el total multiplicado por cantidad (solo para visualización)
             const totalCalculado = (gasto.honorario + gasto.reembolso + gasto.retenido + gasto.reemborsoCTP) * gasto.cantidad;
             
-            // Nuevo formato de visualización
             let contenidoHTML = `
                 <div>
                     <p class="font-medium">${gasto.tipo}</p>
@@ -3123,7 +2862,6 @@ const gastosStore = {
                         Costo: Q ${(gasto.honorario + gasto.reembolso + gasto.retenido + gasto.reemborsoCTP).toFixed(2)} × ${gasto.cantidad}
             `;
             
-            // Siempre mostrar el total si la cantidad es mayor que 1
             if (gasto.cantidad > 1) {
                 contenidoHTML += ` = Total: Q ${totalCalculado.toLocaleString('es-GT', {minimumFractionDigits: 2})}`;
             }
@@ -3142,10 +2880,9 @@ const gastosStore = {
         });
     },
     
-    // Renderizar en la tabla de información
     renderInfoTable: function() {
         const table = document.getElementById('info-gastos-table');
-        if (!table) return; // Si la tabla no existe (pestaña no visible), no hacer nada
+        if (!table) return;
         
         table.innerHTML = '';
         
@@ -3167,7 +2904,6 @@ const gastosStore = {
         this.updateInfoTotales();
     },
     
-    // Actualizar totales en el formulario
     updateTotales: function() {
         let totalHonorarios = 0;
         let totalReembolso = 0;
@@ -3181,7 +2917,6 @@ const gastosStore = {
             totalReemborsoCTP += gasto.reemborsoCTP;
         });
         
-        // Actualizar elementos si existen
         const elementos = {
             'total-honorarios-table': totalHonorarios,
             'total-reembolso-table': totalReembolso,
@@ -3196,7 +2931,6 @@ const gastosStore = {
             }
         }
         
-        // Actualizar valor a reembolsar a legal (suma de Reembolso + Reembolso CTP)
         const valorReembolsarElement = document.getElementById('valor-reembolsar-legal');
         if (valorReembolsarElement) {
             const valorReembolsar = totalReembolso + totalReemborsoCTP;
@@ -3204,7 +2938,6 @@ const gastosStore = {
         }
     },
     
-    // Actualizar totales en la tabla de información
     updateInfoTotales: function() {
         let totalHonorarios = 0;
         let totalReembolso = 0;
@@ -3221,7 +2954,6 @@ const gastosStore = {
             totalTotal += gasto.total * cantidad;
         });
         
-        // Actualizar elementos si existen
         const elementos = {
             'total-honorarios-table': totalHonorarios,
             'total-reembolso-table': totalReembolso,
@@ -3239,7 +2971,6 @@ const gastosStore = {
     }
 };
 
-// Función para manejar la gestión de gastos legales
 function initGastosManagement() {
     // Gastos Legales
     document.getElementById('agregar-gasto-legal').addEventListener('click', function() {
@@ -3249,22 +2980,17 @@ function initGastosManagement() {
     
     if (selectGasto.value === "") return;
     
-    // Obtener los valores de atributos data
     const honorario = parseFloat(selectedOption.getAttribute('data-honorario')) || 0;
     const reembolso = parseFloat(selectedOption.getAttribute('data-reembolso')) || 0;
     const retenido = parseFloat(selectedOption.getAttribute('data-retenido')) || 0;
     
-    // Calcular reembolso CTP solo si el gasto es "Carta Total de Pago"
     let reemborsoCTP = 0;
     if (selectedOption.text === "Carta Total de Pago") {
-        // Sumar todos los montos CTP de las hipotecas previas
         reemborsoCTP = calcularTotalMontosCTP();
     } else {
-        // Si no es Carta Total de Pago, usar el valor del data-attribute
         reemborsoCTP = parseFloat(selectedOption.getAttribute('data-reembolso-ctp')) || 0;
     }
     
-    // Usar el almacén de datos global para añadir el gasto
     gastosStore.addGasto(
         selectedOption.text,
         cantidad,
@@ -3274,23 +3000,18 @@ function initGastosManagement() {
         reemborsoCTP
     );
     
-    // Resetear campos
     selectGasto.value = "";
     document.getElementById('gasto-legal-cantidad').value = "1";
 });
 
 
-// Función para calcular el total de montos CTP de todas las hipotecas previas
 function calcularTotalMontosCTP() {
-    // Verificar primero si se está cancelando hipoteca
     const cancelaHipoteca = document.getElementById('cancela-hipoteca').checked;
     if (!cancelaHipoteca) return 0;
     
-    // Obtener todas las hipotecas previas
     const hipotecas = document.querySelectorAll('.hipoteca-previa');
     let totalCTP = 0;
     
-    // Sumar los montos CTP de cada hipoteca
     hipotecas.forEach(hipoteca => {
         const montoCTPInput = hipoteca.querySelector('[name="monto-ctp"]');
         if (montoCTPInput) {
@@ -3307,15 +3028,12 @@ function calcularTotalMontosCTP() {
 
 
 function initCTPEvents() {
-    // Delegación de eventos para los inputs de monto CTP
     document.addEventListener('input', function(e) {
         if (e.target.name === 'monto-ctp') {
-            // Buscar todos los gastos de tipo "Carta Total de Pago" y actualizar su reembolso CTP
             actualizarReembolsoCTPEnGastos();
         }
     });
     
-    // También detectar cuando se agrega o elimina una hipoteca
     document.getElementById('add-hipoteca').addEventListener('click', function() {
         setTimeout(actualizarReembolsoCTPEnGastos, 100);
     });
@@ -3328,52 +3046,42 @@ function initCTPEvents() {
 }
 
 function actualizarReembolsoCTPEnGastos() {
-    // Calcular el total de montos CTP
     const totalCTP = calcularTotalMontosCTP();
     
-    // Actualizar todos los gastos de tipo "Carta Total de Pago"
     const itemsActualizados = [];
     gastosStore.items.forEach(gasto => {
         if (gasto.tipo === "Carta Total de Pago") {
-            // Guardar el ID y el reembolso CTP anterior para depuración
             itemsActualizados.push({
                 id: gasto.id,
                 reemborsoCTPAnterior: gasto.reemborsoCTP,
                 reemborsoCTPNuevo: totalCTP
             });
             
-            // Actualizar el reembolso CTP
             gasto.reemborsoCTP = totalCTP;
-            // Actualizar el total
             gasto.total = gasto.honorario + gasto.reembolso + gasto.retenido + gasto.reemborsoCTP;
         }
     });
     
-    // Si se actualizó algún gasto, renderizar nuevamente
     if (itemsActualizados.length > 0) {
         console.log("Gastos actualizados:", itemsActualizados);
         gastosStore.renderAll();
     }
 }
 
-    // Otros Gastos
     document.getElementById('agregar-otro-gasto').addEventListener('click', function() {
         const selectGasto = document.getElementById('select-otro-gasto');
         const costoInput = document.getElementById('otro-gasto-costo');
         
         if(selectGasto.value === "") {
-            return; // No hacer nada si no hay selección
+            return; 
         }
         
-        // Obtener el costo personalizado
         const costo = parseFloat(costoInput.value) || 0;
         
-        // Ocultar mensaje de "no hay gastos"
         if(document.getElementById('no-otros-gastos')) {
             document.getElementById('no-otros-gastos').style.display = 'none';
         }
         
-        // Crear el elemento de gasto
         const gastoItem = document.createElement('div');
         gastoItem.className = 'flex justify-between items-center p-2 mb-2 bg-white border rounded';
         
@@ -3389,15 +3097,12 @@ function actualizarReembolsoCTPEnGastos() {
             </button>
         `;
         
-        // Añadir a la lista
         document.getElementById('lista-otros-gastos').appendChild(gastoItem);
         
-        // Resetear los campos
         selectGasto.value = "";
         costoInput.value = "0";
     });
     
-    // Delegación de eventos para eliminar gastos
     document.addEventListener('click', function(e) {
         if(e.target.closest('.eliminar-gasto')) {
             const gastoId = parseInt(e.target.closest('.eliminar-gasto').dataset.gastoId);
@@ -3413,13 +3118,11 @@ function actualizarReembolsoCTPEnGastos() {
             }
         }
         
-        // Para otros gastos
         if(e.target.closest('.eliminar-otro-gasto')) {
             const gastoItem = e.target.closest('div.flex');
             if (gastoItem) {
                 gastoItem.remove();
                 
-                // Mostrar mensaje si no hay gastos
                 if(document.getElementById('lista-otros-gastos').children.length === 1) {
                     document.getElementById('no-otros-gastos').style.display = 'block';
                 }
@@ -3428,9 +3131,7 @@ function actualizarReembolsoCTPEnGastos() {
     });
 }
 
-// Función para inicializar la gestión de desembolsos
 function initDesembolsosManagement() {
-    // Establecer evento para el botón de agregar desembolso
     const addDesembolsoBtn = document.getElementById('add-desembolso');
     if (addDesembolsoBtn) {
         addDesembolsoBtn.addEventListener('click', function() {
@@ -3439,18 +3140,15 @@ function initDesembolsosManagement() {
     }
 }
 
-// Función para agregar una nueva fila de desembolso
 function addNewDesembolsoRow() {
     const tbody = document.getElementById('desembolsos-container');
     if (!tbody) return;
     
     const newRow = document.createElement('tr');
     
-    // Obtener la moneda actual
     const moneda = document.getElementById('moneda');
     const simbolo = moneda && moneda.value === 'GTQ' ? 'Q' : '$';
     
-    // Crear la nueva fila con todos los campos necesarios
     newRow.innerHTML = `
         <td class="px-6 py-4 whitespace-nowrap">
             <select class="input-field w-full">
@@ -3493,11 +3191,8 @@ function addNewDesembolsoRow() {
     
     tbody.appendChild(newRow);
 }
-// FUNCIONES PARA LA PESTAÑA DE RESUMEN (CORREGIDAS)
 
-// Función para inicializar todos los campos del resumen con valores vacíos
 function initializeEmptyFields() {
-    // 1. Limpiar datos de cliente
     const clienteFields = [
         'print-empresa', 'print-cliente', 'print-dpi', 'print-nit', 
         'print-tipo-prestamo', 'print-interes', 'print-interes-mensual',
@@ -3509,7 +3204,6 @@ function initializeEmptyFields() {
         if (element) element.textContent = '';
     });
     
-    // 2. Limpiar desglose financiero
     const desgloseFields = [
         'desglose-monto', 'desglose-intereses-mes', 'desglose-intereses-adelantados', 
         'desglose-corretaje', 'desglose-gastos-admin', 'desglose-subtotal',
@@ -3523,7 +3217,6 @@ function initializeEmptyFields() {
         if (element) element.textContent = '';
     });
     
-// Observador para recalcular cuando cambie el contenido de desembolsos
 const desembolsosPrint = document.getElementById('desembolsos-print');
   if (desembolsosPrint) {
     const observer = new MutationObserver(calcularDiferenciaCotizacion);
@@ -3535,9 +3228,7 @@ const desembolsosPrint = document.getElementById('desembolsos-print');
 }
 
 
-// Agregar esta función independiente para calcular el subtotal
 function calculateSubtotalDirectly() {
-    // Obtener todos los valores relevantes
     const capital = parseFloat(document.getElementById('capital').value) || 0;
     const interes = parseFloat(document.getElementById('interes').value) || 0;
     const mesesAdelantar = parseInt(document.getElementById('meses-adelantar').value) || 0;
@@ -3546,7 +3237,6 @@ function calculateSubtotalDirectly() {
     const legal = parseFloat(document.getElementById('legal').value) || 0;
     const empresa = document.getElementById('empresa').value;
     
-    // Obtener la fecha actual
     const fechaFormulario = document.getElementById('fecha-formulario').value;
     let fechaActual;
     if (fechaFormulario) {
@@ -3555,25 +3245,20 @@ function calculateSubtotalDirectly() {
         fechaActual = new Date();
     }
     
-    // Calcular interés mensual
     const interesDecimal = interes / 100;
     const interesMonetario = capital * interesDecimal;
     
-    // Calcular interés del mes en curso (fórmula como en Excel)
     const ultimoDiaMes = new Date(fechaActual.getFullYear(), fechaActual.getMonth() + 1, 0);
     const diasRestantes = ultimoDiaMes.getDate() - fechaActual.getDate() + 1;
     const diasTotalMes = ultimoDiaMes.getDate();
     const interesesMes = -(diasRestantes * capital * interesDecimal / diasTotalMes);
     
-    // Calcular intereses adelantados
     const interesesAdelantados = -interesMonetario * mesesAdelantar;
     
-    // Calcular gastos basados en porcentajes
     const gastoCorretaje = -(capital * corretaje / 100);
     const gastoAdmin = -(capital * gastosAdmin / 100);
     const gastoLegal = -(capital * legal / 100);
     
-    // Determinar gastos específicos de Coopexpress
     let gastoCourier = 0;
     let gastoCooperativa = 0;
     if (empresa === "Coopexpress") {
@@ -3581,7 +3266,6 @@ function calculateSubtotalDirectly() {
         gastoCooperativa = -100;
     }
     
-    // Calcular subtotal
     const subtotal = capital + 
                      interesesMes + 
                      interesesAdelantados + 
@@ -3605,16 +3289,13 @@ function calculateSubtotalDirectly() {
 }
 
 
-// Función principal para calcular la hipoteca (corregida)
 function calculateMortgage() {
-    // Obtener valores del formulario
     const cliente = document.getElementById('cliente').value;
     const dpi = document.getElementById('dpi').value;
     const nit = document.getElementById('nit').value;
     const tipoPrestamo = document.getElementById('tipo-prestamo').value;
     const empresa = document.getElementById('empresa').value;
     
-    // Obtener y normalizar fecha
     const fechaFormulario = document.getElementById('fecha-formulario').value;
     let fechaActual;
     
@@ -3631,7 +3312,6 @@ console.log("Datos de gastos para la cotización:");
 console.log("- Gastos legales:", gastosLegalesData);
 console.log("- Otros gastos:", otrosGastosData);
 
-    // Obtener valores financieros
     const monedaSelect = document.getElementById('moneda');
     const moneda = monedaSelect.value;
     const simboloMoneda = moneda === 'GTQ' ? 'Q' : '$';
@@ -3642,25 +3322,21 @@ console.log("- Otros gastos:", otrosGastosData);
     const legal = parseFloat(document.getElementById('legal').value) || 0;
     const mesesAdelantar = parseInt(document.getElementById('meses-adelantar').value) || 0;
     
-    // Obtener valores específicos para cálculos exactos
     const tipoImpuesto = document.getElementById('tipo-impuesto').value;
     const cantidadFincas = parseInt(document.getElementById('cantidad-fincas').value) || 1;
     const valorRGP = parseFloat(document.getElementById('valor-rgp').value) || 0;
     const valorCatastro = parseFloat(document.getElementById('valor-catastro').value) || 0;
     
-// Verificar los valores para debugging
     console.log("VALORES CAPTURADOS PARA CÁLCULO:");
     console.log("- Valor RGP:", valorRGP);
     console.log("- Valor Catastro:", valorCatastro);
     console.log("- Tipo de impuesto:", tipoImpuesto);
 
-    // Verificar si hay datos mínimos necesarios
     if (!cliente || !capital) {
         alert("Por favor ingrese al menos el nombre del cliente y el capital solicitado.");
         return;
     }
     
-    // Recopilar gastos legales y otros gastos de manera más precisa
     const gastosLegales = collectLegalExpenses();
     const otrosGastos = collectOtherExpenses();
 
@@ -3668,7 +3344,6 @@ console.log("Totales de gastos para la cotización:");
 console.log("- Gastos legales:", gastosLegales);
 console.log("- Otros gastos:", otrosGastos);
     
-    // Calcular el desglose financiero completo con todos los parámetros
     const breakdown = FinancialCalculator.calculateFinancialBreakdown({
         capital,
         interestRate: interes,
@@ -3676,30 +3351,28 @@ console.log("- Otros gastos:", otrosGastos);
         brokerage: corretaje,
         adminFee: gastosAdmin,
         legalFee: legal,
-        legalExpensesData: gastosLegalesData,   // Pasar el objeto completo
-        otherExpensesData: otrosGastosData,     // Pasar el objeto completo
-        legalExpenses: gastosLegalesData.total, // Mantener compatibilidad
-        otherExpenses: otrosGastosData.total,   // Mantener compatibilidad
+        legalExpensesData: gastosLegalesData,  
+        otherExpensesData: otrosGastosData,    
+        legalExpenses: gastosLegalesData.total, 
+        otherExpenses: otrosGastosData.total,   
         fechaActual,
         cantidadFincas,
         valorRGP,
-        valorCatastro,  // Esta línea debe existir y tener el valor correcto
+        valorCatastro,  
         tipoImpuesto,
         empresa
     });
     
     
-    // Actualizar datos del cliente en la pestaña de resumen
+   
     if (empresa) document.getElementById('print-empresa').textContent = empresa;
     if (cliente) document.getElementById('print-cliente').textContent = cliente;
     if (dpi) document.getElementById('print-dpi').textContent = dpi;
     if (nit) document.getElementById('print-nit').textContent = nit;
     if (tipoPrestamo) document.getElementById('print-tipo-prestamo').textContent = tipoPrestamo;
     
-    // Actualizar valores financieros
     if (interes) document.getElementById('print-interes').textContent = interes.toFixed(2) + '%';
     
-    // Calcular y mostrar el interés mensual como valor monetario (directamente)
     const interesMonetario = capital * (interes / 100);
     document.getElementById('print-interes-mensual').textContent = `${simboloMoneda} ${formatNumber(interesMonetario)}`;
     
@@ -3708,40 +3381,32 @@ console.log("- Otros gastos:", otrosGastos);
     if (gastosAdmin) document.getElementById('print-gastos-admin').textContent = gastosAdmin.toFixed(2) + '%';
     if (legal) document.getElementById('print-legal').textContent = legal.toFixed(2) + '%';
     
- // Antes de actualizar la tabla, verificar el subtotal calculado directamente
  const subtotalDirecto = calculateSubtotalDirectly();
     console.log("Subtotal calculado directamente:", subtotalDirecto);
     console.log("Subtotal desde FinancialCalculator:", breakdown.subtotal);
 
-     // Si hay discrepancia, sobrescribir el valor
      if (Math.abs(subtotalDirecto - breakdown.subtotal) > 0.01) {
         console.warn("⚠️ Discrepancia detectada en el subtotal, usando valor calculado directamente");
         breakdown.subtotal = subtotalDirecto;
     }
 
-    // Actualizar tabla de desglose financiero
     updateFinancialBreakdownTable(breakdown, simboloMoneda);
     
-    // Generar tabla de desembolsos SOLO con datos del formulario
     generateDesembolsosTable(breakdown.finalAmount, simboloMoneda, fechaFormulario);
     
-    // Si la empresa es Coopexpress, asegurarse de mostrar las filas específicas
     if (empresa === "Coopexpress") {
         toggleCoopexpressExpenses();
     }
     
-    // Establecer que se ha calculado una cotización
     window.cotizacionCalculada = true;
     
 }
 
 
 function calculaSubtotal() {
-    // Obtener el capital
     const capital = parseFloat(document.getElementById('capital').value) || 0;
     console.log("Capital leído:", capital);
     
-    // Obtener todos los valores de gastos que aparecen en la tabla
     const interesesMesEl = document.getElementById('desglose-intereses-mes');
     const interesesAdelantadosEl = document.getElementById('desglose-intereses-adelantados');
     const corretajeEl = document.getElementById('desglose-corretaje');
@@ -3752,31 +3417,26 @@ function calculaSubtotal() {
     console.log("Texto corretaje:", corretajeEl?.textContent);
     console.log("Texto gastos admin:", gastosAdminEl?.textContent);
     
-    // Función para extraer el valor numérico de un texto con formato
     const extraerValor = (texto) => {
         if (!texto) return 0;
         console.log("Extrayendo valor de:", texto);
         
-        // Si el formato es (123.45), extraer el número y retornarlo como negativo
         if (texto.startsWith('(') && texto.endsWith(')')) {
             const valorExtraido = -parseFloat(texto.substring(1, texto.length - 1).replace(/,/g, ''));
             console.log("  → Valor extraído (paréntesis):", valorExtraido);
             return valorExtraido;
         }
         
-        // Si es un número normal, convertirlo
         const valorExtraido = parseFloat(texto.replace(/,/g, ''));
         console.log("  → Valor extraído (normal):", valorExtraido);
         return valorExtraido;
     };
     
-    // Obtener los valores numéricos
     const interesesMes = extraerValor(interesesMesEl?.textContent);
     const interesesAdelantados = extraerValor(interesesAdelantadosEl?.textContent);
     const corretaje = extraerValor(corretajeEl?.textContent);
     const gastosAdmin = extraerValor(gastosAdminEl?.textContent);
     
-    // Valores adicionales de Coopexpress (solo si aplican)
     let courier = 0;
     let cooperative = 0;
     
@@ -3788,7 +3448,6 @@ function calculaSubtotal() {
         cooperative = extraerValor(coopEl?.textContent);
     }
     
-    // Calcular el subtotal correctamente
     const subtotal = capital + interesesMes + interesesAdelantados + corretaje + gastosAdmin + courier + cooperative;
     
     console.log({
@@ -3807,7 +3466,6 @@ function calculaSubtotal() {
 
 
 function updateFinancialBreakdownTable(breakdown, currency) {
-    // Función para formatear valores negativos entre paréntesis
     const formatValue = (value) => {
         if (value < 0) {
             return `(${formatNumber(Math.abs(value))})`;
@@ -3815,7 +3473,6 @@ function updateFinancialBreakdownTable(breakdown, currency) {
         return formatNumber(value);
     };
     
-    // Actualizar cada elemento en la tabla con los valores calculados
     const updateField = (id, value) => {
         const element = document.getElementById(id);
         if (element) {
@@ -3823,43 +3480,33 @@ function updateFinancialBreakdownTable(breakdown, currency) {
         }
     };
     
-    // Primero, eliminar cualquier fila de desglose que pudiera existir
-    // para evitar duplicados al recalcular
     removeGastosRows();
     
-    // Actualizar todos los campos con sus respectivos valores
     updateField('desglose-monto', breakdown.capital);
     updateField('desglose-intereses-mes', breakdown.currentMonthInterest);
     updateField('desglose-intereses-adelantados', breakdown.advanceInterest);
     updateField('desglose-corretaje', breakdown.brokerageFee);
     updateField('desglose-gastos-admin', breakdown.administrationFee);
     
-    // Verificar si es Coopexpress y mostrar las filas correspondientes
     const empresa = document.getElementById('empresa').value;
     const isCoopexpress = empresa === "Coopexpress";
     
-    // Courier
     const courierRow = document.getElementById('desglose-courier-row');
     if (!courierRow) {
-        // Si no existe la fila, crearla
         createCoopexpressRows();
     }
     
-    // Obtener las filas después de asegurarse de que existen
     const updatedCourierRow = document.getElementById('desglose-courier-row');
     const updatedCoopRow = document.getElementById('desglose-coop-row');
     
-    // Mostrar u ocultar según corresponda
     if (updatedCourierRow) updatedCourierRow.style.display = isCoopexpress ? 'table-row' : 'none';
     if (updatedCoopRow) updatedCoopRow.style.display = isCoopexpress ? 'table-row' : 'none';
     
-    // Actualizar valores específicos de Coopexpress
     if (isCoopexpress) {
         updateField('desglose-courier', -75);
         updateField('desglose-coop', -100);
     }
     
-    // Actualizar subtotal y resto de campos
     updateField('desglose-subtotal', breakdown.subtotal);
     updateField('desglose-gastos-inscripcion', breakdown.registrationFees.total);
     updateField('desglose-honorarios', breakdown.registrationFees.honorarios);
@@ -3871,13 +3518,10 @@ function updateFinancialBreakdownTable(breakdown, currency) {
     updateField('desglose-total-gastos', breakdown.totalExpenses);
     updateField('desglose-total-recibe', breakdown.finalAmount);
     
-    // Agregar desglose detallado de gastos legales si existen
     if (breakdown.legalExpensesData && breakdown.legalExpensesData.items && breakdown.legalExpensesData.items.length > 0) {
-        // Obtener la fila después de la cual insertaremos el desglose
         const rowOtrosGastosLegales = document.getElementById('desglose-otros-gastos-legales').closest('tr');
         
         if (rowOtrosGastosLegales) {
-            // Insertar filas de desglose en orden inverso para mantener el orden correcto
             for (let i = breakdown.legalExpensesData.items.length - 1; i >= 0; i--) {
                 const item = breakdown.legalExpensesData.items[i];
                 const newRow = document.createElement('tr');
@@ -3891,13 +3535,10 @@ function updateFinancialBreakdownTable(breakdown, currency) {
         }
     }
     
-    // Agregar desglose detallado de otros gastos si existen
     if (breakdown.otherExpensesData && breakdown.otherExpensesData.items && breakdown.otherExpensesData.items.length > 0) {
-        // Obtener la fila después de la cual insertaremos el desglose
         const rowOtrosGastos = document.getElementById('desglose-otros-gastos').closest('tr');
         
         if (rowOtrosGastos) {
-            // Insertar filas de desglose en orden inverso para mantener el orden correcto
             for (let i = breakdown.otherExpensesData.items.length - 1; i >= 0; i--) {
                 const item = breakdown.otherExpensesData.items[i];
                 const newRow = document.createElement('tr');
@@ -3912,9 +3553,7 @@ function updateFinancialBreakdownTable(breakdown, currency) {
     }
 }
 
-// Función auxiliar para eliminar filas de gastos existentes
 function removeGastosRows() {
-    // Eliminar todas las filas de desglose de gastos
     const gastosRows = document.querySelectorAll('.gasto-detalle-row');
     gastosRows.forEach(row => row.remove());
 }
@@ -3929,10 +3568,8 @@ function generateDesembolsosTable(totalAmount, currency, fechaSeleccionada) {
     
     if (!desembolsosPrint) return;
     
-    // Limpiar tabla actual
     desembolsosPrint.innerHTML = '';
     
-    // Formatear fecha para mostrar
     let fechaMostrar = fechaSeleccionada;
     if (fechaSeleccionada) {
         const partesFecha = fechaSeleccionada.split('-');
@@ -3944,17 +3581,12 @@ function generateDesembolsosTable(totalAmount, currency, fechaSeleccionada) {
         fechaMostrar = `${hoy.getDate().toString().padStart(2, '0')}/${(hoy.getMonth() + 1).toString().padStart(2, '0')}/${hoy.getFullYear()}`;
     }
     
-    // Variable para llevar el total de desembolsos
     let totalDesembolsos = 0;
     
-    // Bandera para verificar si hay desembolsos válidos
     let hayDesembolsosValidos = false;
     
-    // Verificar si hay filas en desembolsosContainer
     if (desembolsosContainer && desembolsosContainer.children) {
-        // Procesar cada fila de desembolsos del formulario
         Array.from(desembolsosContainer.children).forEach((row, index) => {
-            // Capturar datos de la fila
             const tipoDesembolso = row.querySelector('select:first-child')?.value || '';
             const beneficiario = row.querySelector('input[placeholder="Beneficiario"]')?.value || '';
             const montoInput = row.querySelector('input[type="number"]');
@@ -3962,11 +3594,9 @@ function generateDesembolsosTable(totalAmount, currency, fechaSeleccionada) {
             const conceptoSelect = row.querySelector('td:nth-child(4) select');
             const concepto = conceptoSelect ? conceptoSelect.value || '' : '';
             
-            // Solo procesar filas con datos válidos
             if (beneficiario && monto > 0) {
                 hayDesembolsosValidos = true;
                 
-                // Verificar empresa según fórmula Excel
                 let empresaDesembolso = document.getElementById('empresa').value;
                 if (tipoDesembolso === 'Compraventa') {
                     empresaDesembolso = 'Tecnolease';
@@ -3975,10 +3605,8 @@ function generateDesembolsosTable(totalAmount, currency, fechaSeleccionada) {
                 const newRow = document.createElement('tr');
                 newRow.className = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
                 
-                // Incrementar total
                 totalDesembolsos += monto;
                 
-                // Crear fila con los datos
                 newRow.innerHTML = `
                     <td class="py-1 px-1 text-xs">${fechaMostrar}</td>
                     <td class="py-1 px-1 text-xs">${beneficiario}</td>
@@ -3994,13 +3622,11 @@ function generateDesembolsosTable(totalAmount, currency, fechaSeleccionada) {
         });
     }
     
-    // Solo actualizar el total si hay desembolsos válidos
     if (hayDesembolsosValidos) {
         if (document.getElementById('total-desembolsos')) {
             document.getElementById('total-desembolsos').textContent = formatNumber(totalDesembolsos);
         }
     } else {
-        // Si no hay desembolsos válidos, dejar el total vacío
         if (document.getElementById('total-desembolsos')) {
             document.getElementById('total-desembolsos').textContent = '';
         }
@@ -4010,11 +3636,9 @@ function generateDesembolsosTable(totalAmount, currency, fechaSeleccionada) {
 function collectLegalExpenses() {
     console.log("Recopilando gastos legales del formulario...");
     
-    // Obtener todos los gastos legales agregados por el usuario
     const gastosLegalesList = document.getElementById('lista-gastos-legales');
     let totalGastosLegales = 0;
     
-    // Crear un array para almacenar los gastos individuales
     let gastosIndividuales = [];
     
     if (!gastosLegalesList) {
@@ -4022,7 +3646,6 @@ function collectLegalExpenses() {
         return { total: 0, items: [] };
     }
     
-    // Verificar si hay elementos de gasto - si no hay, devolver 0
     const gastoItems = gastosLegalesList.querySelectorAll('.eliminar-gasto-visual');
     console.log(`Se encontraron ${gastoItems.length} elementos de gasto legal`);
     
@@ -4031,43 +3654,34 @@ function collectLegalExpenses() {
         return { total: 0, items: [] };
     }
     
-    // Si hay mensajes "no hay gastos", significa que no hay gastos agregados
     const noGastosMsg = document.getElementById('no-gastos-legales');
     if (noGastosMsg && noGastosMsg.style.display !== 'none') {
         console.log("El mensaje 'no hay gastos' está visible");
         return { total: 0, items: [] };
     }
     
-    // Recorrer todos los elementos que son gastos
     gastoItems.forEach((item, index) => {
         const gastoElement = item.closest('div.flex');
         if (gastoElement) {
-            // Obtener el nombre del gasto (título)
             const nombreGasto = gastoElement.querySelector('.font-medium')?.textContent || '';
             
-            // Obtener el texto completo que incluye el costo
             const gastoCostoText = gastoElement.querySelector('.text-sm')?.textContent || '';
             console.log(`Gasto #${index + 1}: "${nombreGasto}" - "${gastoCostoText}"`);
             
-            // Extraer el número usando una expresión regular
             const matches = gastoCostoText.match(/Q\s*([\d,]+(\.\d+)?)/);
             if (matches && matches[1]) {
-                // Convertir el texto a número
                 const costo = parseFloat(matches[1].replace(/,/g, ''));
                 console.log(`  → Valor extraído: ${costo}`);
                 
-                // Obtener cantidad si existe
                 const cantidadMatch = gastoCostoText.match(/×\s*(\d+)/);
                 const cantidad = cantidadMatch ? parseInt(cantidadMatch[1]) : 1;
                 
-                // Agregar al total y a la lista de items
                 const costoTotal = costo * cantidad;
                 totalGastosLegales += isNaN(costoTotal) ? 0 : costoTotal;
                 
-                // Agregar a la lista de gastos individuales
                 gastosIndividuales.push({
                     nombre: nombreGasto,
-                    costo: costoTotal  // Guardamos como positivo para procesarlo después
+                    costo: costoTotal 
                 });
             } else {
                 console.log("  → No se pudo extraer el valor numérico");
@@ -4097,7 +3711,6 @@ function collectOtherExpenses() {
         return { total: 0, items: [] };
     }
     
-    // Verificar si hay elementos de gasto
     const gastoItems = otrosGastosList.querySelectorAll('.eliminar-otro-gasto');
     console.log(`Se encontraron ${gastoItems.length} elementos de otros gastos`);
     
@@ -4106,21 +3719,17 @@ function collectOtherExpenses() {
         return { total: 0, items: [] };
     }
     
-    // Si hay mensajes "no hay gastos", devolver 0
     const noGastosMsg = document.getElementById('no-otros-gastos');
     if (noGastosMsg && noGastosMsg.style.display !== 'none') {
         console.log("El mensaje 'no hay otros gastos' está visible");
         return { total: 0, items: [] };
     }
     
-    // Recorrer todos los elementos que son gastos
     gastoItems.forEach((item, index) => {
         const gastoElement = item.closest('div.flex');
         if (gastoElement) {
-            // Obtener el nombre del gasto
             const nombreGasto = gastoElement.querySelector('.font-medium')?.textContent || '';
             
-            // Obtener el costo almacenado
             const costInput = gastoElement.querySelector('.otro-gasto-cost');
             if (costInput) {
                 const costo = parseFloat(costInput.value);
@@ -4128,10 +3737,9 @@ function collectOtherExpenses() {
                 
                 totalOtrosGastos += isNaN(costo) ? 0 : costo;
                 
-                // Agregar a la lista de gastos individuales
                 gastosIndividuales.push({
                     nombre: nombreGasto,
-                    costo: costo  // Guardamos como positivo para procesarlo después
+                    costo: costo  
                 });
             } else {
                 console.log(`Otro gasto #${index + 1}: No se encontró el valor`);
@@ -4146,7 +3754,6 @@ function collectOtherExpenses() {
     };
 }
 
-// Función para formatear números
 function formatNumber(number) {
     return number.toLocaleString('es-GT', {
         minimumFractionDigits: 2,
@@ -4155,7 +3762,6 @@ function formatNumber(number) {
 }
 
 
-// Función para mostrar y ocultar elementos con animación
 function toggleElement(element, show) {
     if (!element) return;
     
@@ -4174,9 +3780,7 @@ function toggleElement(element, show) {
     }
 }
 
-// Función para mostrar notificación de gasto agregado
 function showNotification(message, isSuccess = true) {
-    // Crear elemento de notificación si no existe
     let notification = document.getElementById('gasto-notification');
     if (!notification) {
         notification = document.createElement('div');
@@ -4187,24 +3791,20 @@ function showNotification(message, isSuccess = true) {
         document.body.appendChild(notification);
     }
     
-    // Configurar estilo y mensaje
     notification.className = isSuccess 
         ? 'fixed top-4 right-4 py-2 px-4 bg-green-500 text-white rounded shadow-lg transform transition-all duration-300 z-50'
         : 'fixed top-4 right-4 py-2 px-4 bg-red-500 text-white rounded shadow-lg transform transition-all duration-300 z-50';
     notification.textContent = message;
     
-    // Mostrar y luego ocultar
     notification.style.opacity = '1';
     notification.style.transform = 'translateY(0)';
     
-    // Ocultar después de 3 segundos
     setTimeout(() => {
         notification.style.opacity = '0';
         notification.style.transform = 'translateY(-20px)';
     }, 3000);
 }
 
-// Mejorar la interacción al agregar un gasto legal
 document.getElementById('agregar-gasto-legal')?.addEventListener('click', function() {
     const selectGasto = document.getElementById('select-gasto-legal');
     if (selectGasto.value === "") {
@@ -4214,17 +3814,14 @@ document.getElementById('agregar-gasto-legal')?.addEventListener('click', functi
     }
     
 
-    // Después de agregar el gasto exitosamente
     showNotification('Gasto legal agregado correctamente');
     
-    // Ocultar el mensaje "no hay gastos"
     const noGastosMsg = document.getElementById('no-gastos-legales');
     if (noGastosMsg) {
         toggleElement(noGastosMsg, false);
     }
 });
 
-// Mejorar la interacción al agregar otro gasto
 document.getElementById('agregar-otro-gasto')?.addEventListener('click', function() {
     const selectGasto = document.getElementById('select-otro-gasto');
     const costoInput = document.getElementById('otro-gasto-costo');
@@ -4241,86 +3838,68 @@ document.getElementById('agregar-otro-gasto')?.addEventListener('click', functio
         return;
     }
     
-    // El resto del código existente para agregar el gasto
-    // ...
+
     
-    // Después de agregar el gasto exitosamente
     showNotification('Gasto adicional agregado correctamente');
     
-    // Ocultar el mensaje "no hay gastos"
     const noGastosMsg = document.getElementById('no-otros-gastos');
     if (noGastosMsg) {
         toggleElement(noGastosMsg, false);
     }
 });
 
-// Ajustar la altura de los contenedores de gastos para que sean iguales
 function equalizeHeight() {
     const listaGastosLegales = document.getElementById('lista-gastos-legales');
     const listaOtrosGastos = document.getElementById('lista-otros-gastos');
     
     if (listaGastosLegales && listaOtrosGastos && window.innerWidth >= 768) {
-        // Restablecer alturas
         listaGastosLegales.style.height = 'auto';
         listaOtrosGastos.style.height = 'auto';
         
-        // Obtener la altura máxima
         const height1 = listaGastosLegales.offsetHeight;
         const height2 = listaOtrosGastos.offsetHeight;
         const maxHeight = Math.max(height1, height2);
         
-        // Aplicar altura máxima a ambos contenedores
         if (maxHeight > 150) {
             listaGastosLegales.style.height = `${maxHeight}px`;
             listaOtrosGastos.style.height = `${maxHeight}px`;
         }
     } else {
-        // En dispositivos móviles, restablecer alturas
         if (listaGastosLegales) listaGastosLegales.style.height = 'auto';
         if (listaOtrosGastos) listaOtrosGastos.style.height = 'auto';
     }
 }
 
-// Ejecutar al cargar y cuando se redimensiona la ventana
 window.addEventListener('load', equalizeHeight);
 window.addEventListener('resize', equalizeHeight);
 
-// Ejecutar cuando los gastos cambien
 const observerConfig = { childList: true, subtree: true };
 const observer = new MutationObserver(equalizeHeight);
 
-// Observar cambios en los contenedores de gastos
 const listaGastosLegales = document.getElementById('lista-gastos-legales');
 const listaOtrosGastos = document.getElementById('lista-otros-gastos');
 
 if (listaGastosLegales) observer.observe(listaGastosLegales, observerConfig);
 if (listaOtrosGastos) observer.observe(listaOtrosGastos, observerConfig);
 
-// Crear animaciones para las tarjetas de gastos
 function setupGastoAnimations() {
-    // Animación al eliminar un gasto
     document.addEventListener('click', function(e) {
         if (e.target.closest('.eliminar-gasto-visual') || e.target.closest('.eliminar-otro-gasto')) {
             const card = e.target.closest('.flex.justify-between');
             if (card) {
-                // Aplicar animación de salida
                 card.style.transition = 'all 0.3s ease';
                 card.style.opacity = '0';
                 card.style.transform = 'translateX(20px)';
                 
-                // Esperar a que termine la animación antes de eliminar
                 setTimeout(() => {
-                    // Aquí el código original de eliminación...
                 }, 300);
             }
         }
     });
 }
 
-// Iniciar las animaciones
 setupGastoAnimations();
 
-// Forzar misma altura en los contenedores de gastos
 function forceEqualContainerHeights() {
   const container1 = document.getElementById('lista-gastos-legales');
   const container2 = document.getElementById('lista-otros-gastos');
@@ -4332,25 +3911,20 @@ function forceEqualContainerHeights() {
   }
 }
 
-// Ejecutar cuando se carga la página y cuando cambia el tamaño de la ventana
 window.addEventListener('load', forceEqualContainerHeights);
 window.addEventListener('resize', forceEqualContainerHeights);
 
 
-// Solución simplificada y completa para generar PDF con todos los detalles
 (function() {
-    // Esperar a que el DOM esté completamente cargado
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', inicializar);
     } else {
         inicializar();
     }
     
-    // Función de inicialización
     function inicializar() {
         console.log("Inicializando generador de PDF simplificado...");
         
-        // Reemplazar el botón PDF
         const pdfButton = document.getElementById('save-pdf-btn');
         if (pdfButton) {
             const newButton = pdfButton.cloneNode(true);
@@ -4365,13 +3939,10 @@ window.addEventListener('resize', forceEqualContainerHeights);
         }
     }
     
-    // Función para generar el PDF
     function generarPDF() {
-        // Mostrar indicador de carga
         const overlay = crearOverlayCarga();
         document.body.appendChild(overlay);
         
-        // Asegurar que estamos en la pestaña de resumen
         const tabBotones = document.querySelectorAll('.tab-button');
         tabBotones.forEach(boton => {
             if (boton.dataset && boton.dataset.tab === 'summary' && !boton.classList.contains('active')) {
@@ -4379,7 +3950,6 @@ window.addEventListener('resize', forceEqualContainerHeights);
             }
         });
         
-        // Esperar a que se active la pestaña
         setTimeout(function() {
             try {
                 const printWindow = window.open('', '_blank', 'width=800,height=600');
@@ -4390,19 +3960,15 @@ window.addEventListener('resize', forceEqualContainerHeights);
                     return;
                 }
                 
-                // Obtener contenido para el PDF
                 const contenidoHTML = generarContenidoHTML();
                 
-                // Escribir el contenido en la ventana
                 printWindow.document.open();
                 printWindow.document.write(contenidoHTML);
                 printWindow.document.close();
                 
-                // Manejar evento de carga
                 printWindow.onload = function() {
                     document.body.removeChild(overlay);
                     
-                    // Imprimir automáticamente después de 1 segundo
                     setTimeout(function() {
                         printWindow.print();
                     }, 1000);
@@ -4415,9 +3981,7 @@ window.addEventListener('resize', forceEqualContainerHeights);
         }, 500);
     }
     
-// Función corregida para generar contenido HTML para PDF sin página extra en blanco
 function generarContenidoHTML() {
-    // Obtener datos básicos
     const empresa = document.getElementById('print-empresa')?.textContent || '';
     const cliente = document.getElementById('print-cliente')?.textContent || '';
     const dpi = document.getElementById('print-dpi')?.textContent || '';
@@ -4430,26 +3994,20 @@ function generarContenidoHTML() {
     const gastosAdmin = document.getElementById('print-gastos-admin')?.textContent || '';
     const legal = document.getElementById('print-legal')?.textContent || '';
     
-    // Fecha actual formateada
     const fechaActual = new Date();
     const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
     const fechaFormateada = fechaActual.toLocaleDateString('es-GT', opcionesFecha);
     
-    // Obtener datos del desglose financiero
     const desgloseFinanciero = obtenerDesgloseFinanciero();
     
-    // Obtener detalle de desembolsos
     const detalleDesembolsos = obtenerDetalleDesembolsos();
     
-    // Obtener detalle de gastos
     const detalleGastos = obtenerDetalleGastos();
     
-    // Obtener la diferencia ya calculada del elemento existente
     const diferenciaElement = document.getElementById('diferencia-cotizacion');
     const diferenciaTotal = diferenciaElement ? diferenciaElement.textContent : '0.00';
     const diferenciaClass = diferenciaElement && diferenciaElement.classList.contains('text-green-600') ? 'positive' : 'negative';
     
-    // Construir el HTML completo con formato elegante y compacto
     return `
         <!DOCTYPE html>
         <html>
@@ -4459,7 +4017,6 @@ function generarContenidoHTML() {
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
                 
-                /* Variables de diseño */
                 :root {
                     --primary: #FF6B00;
                     --primary-dark: #E05600;
@@ -4475,7 +4032,6 @@ function generarContenidoHTML() {
                     --info: #17a2b8;
                 }
                 
-                /* Estilos generales */
                 * {
                     margin: 0;
                     padding: 0;
@@ -4498,7 +4054,6 @@ function generarContenidoHTML() {
                     page-break-after: always;
                 }
                 
-                /* Estilo de hoja membretada */
                 .letterhead {
                     position: relative;
                     height: 90px;
@@ -4661,7 +4216,6 @@ function generarContenidoHTML() {
                     font-size: 9pt;
                 }
                 
-                /* Sección de diferencia */
                 .diferencia-box {
                     background-color: rgba(255, 193, 7, 0.15);
                     border: 1px solid var(--warning);
@@ -4725,7 +4279,6 @@ function generarContenidoHTML() {
                     color: var(--gray-light);
                 }
                 
-                /* Pie de página */
                 .footer {
                     position: absolute;
                     bottom: 0.5in;
@@ -4745,7 +4298,6 @@ function generarContenidoHTML() {
                     margin-top: 3px;
                 }
                 
-                /* Página de detalles de gastos */
                 .page-title {
                     background-color: var(--secondary);
                     color: white;
@@ -4757,7 +4309,6 @@ function generarContenidoHTML() {
                     border-radius: 5px;
                 }
                 
-                /* Botones de impresión */
                 .print-buttons {
                     text-align: center;
                     margin: 15px 0;
@@ -4815,9 +4366,7 @@ function generarContenidoHTML() {
                 }
                     
 
-/* Añadir estos estilos dentro del bloque <style> de generarContenidoHTML() */
 
-/* Ajustes mejorados para impresión */
 @media print {
     body {
         margin: 0;
@@ -4838,26 +4387,22 @@ function generarContenidoHTML() {
         display: none;
     }
     
-    /* Optimizaciones específicas para tablas */
     table {
         page-break-inside: avoid;
         width: 100% !important;
     }
     
-    /* Reducir tamaño de fuente general para tablas en impresión */
     table th, table td {
         font-size: 8pt !important;
         padding: 3px 4px !important;
     }
     
-    /* Contenido no debe exceder su celda */
     td {
         word-break: break-word;
         max-width: 100%;
     }
 }
 
-/* Mejorar visualización de tablas en general */
 table {
     table-layout: fixed;
     width: 100%;
@@ -4868,7 +4413,6 @@ td {
     text-overflow: ellipsis;
 }
 
-/* Asegurar que la tabla de desembolsos sea visible horizontalmente */
 .content-grid {
     display: block;
     width: 100%;
@@ -4885,7 +4429,6 @@ td {
         <body>
             <!-- Primera Página - Resumen -->
             <div class="page">
-                <!-- Encabezado tipo membrete -->
                 <div class="letterhead">
                     <div class="letterhead-bg"></div>
                     <div class="letterhead-content">
@@ -4902,7 +4445,6 @@ td {
                 </div>
                 
                 <div class="document-body">
-                    <!-- Información del cliente -->
                     <div class="client-section">
                         <div class="info-field">
                             <div class="info-label">Cliente</div>
@@ -4955,7 +4497,6 @@ td {
                         </div>
                     </div>
                     
-                    <!-- Tablas principales -->
                     <div class="content-grid">
                         <!-- Desglose financiero -->
                         <div>
@@ -4963,7 +4504,6 @@ td {
                             ${desgloseFinanciero}
                         </div>
                         
-                        <!-- Desembolsos -->
                         <div>
                             <div class="section-title">Detalle de Desembolsos</div>
                             ${detalleDesembolsos}
@@ -4978,7 +4518,6 @@ td {
                         </div>
                     </div>
                     
-                    <!-- Firmas -->
                     <br>
                     <br>
                     <br>
@@ -5003,9 +4542,7 @@ td {
 
             </div>
             
-            <!-- Segunda Página - Detalle de Gastos (última página) -->
             <div class="page" style="page-break-after: avoid;">
-                <!-- Encabezado tipo membrete -->
                 <div class="letterhead">
                     <div class="letterhead-bg"></div>
                     <div class="letterhead-content">
@@ -5031,7 +4568,6 @@ td {
               
             </div>
             
-            <!-- Botones de impresión -->
             <div class="print-buttons">
                 <button class="btn" onclick="window.print();">Imprimir / Guardar como PDF</button>
                 <button class="btn btn-secondary" onclick="window.close();">Cerrar</button>
@@ -5042,9 +4578,7 @@ td {
 }
 
 
-    // Obtener HTML para el desglose financiero
     function obtenerDesgloseFinanciero() {
-        // Obtener elementos del desglose desde el DOM
         const montoSolicitado = document.getElementById('desglose-monto')?.textContent || '';
         const interesesMes = document.getElementById('desglose-intereses-mes')?.textContent || '';
         const interesesAdelantados = document.getElementById('desglose-intereses-adelantados')?.textContent || '';
@@ -5061,7 +4595,6 @@ td {
         const totalGastos = document.getElementById('desglose-total-gastos')?.textContent || '';
         const totalRecibe = document.getElementById('desglose-total-recibe')?.textContent || '';
         
-        // Buscar filas de gastos específicos
         let filasGastosLegales = '';
         document.querySelectorAll('.gasto-detalle-row').forEach(fila => {
             const nombre = fila.querySelector('td:first-child')?.textContent || '';
@@ -5075,7 +4608,6 @@ td {
             `;
         });
         
-        // Verificar si hay filas en Coopexpress
         let filasCoopexpress = '';
         const courierRow = document.getElementById('desglose-courier-row');
         const coopRow = document.getElementById('desglose-coop-row');
@@ -5100,7 +4632,6 @@ td {
             `;
         }
         
-        // Construir tabla de desglose
         return `
             <table>
                 <tr>
@@ -5169,7 +4700,6 @@ td {
         `;
     }
     
-  // Aplicar estilos globales para las tablas de desembolsos
 const estiloTablas = document.createElement('style');
 estiloTablas.textContent = `
     /* Asegurar que todos los encabezados de tabla tengan texto blanco */
@@ -5180,16 +4710,12 @@ estiloTablas.textContent = `
 `;
 document.head.appendChild(estiloTablas);
 
-// Función mejorada para encabezados de tabla visibles con layout optimizado para impresión
 function obtenerDetalleDesembolsos() {
-    // Buscar la tabla de desembolsos en la vista de impresión
     const desembolsosPrint = document.getElementById('desembolsos-print');
     const totalDesembolsos = document.getElementById('total-desembolsos')?.textContent || '';
     
-    // Definir estilo específico para la tabla de desembolsos
     const estiloTablaDesembolsos = `
         <style>
-            /* Ajustes específicos para la tabla de desembolsos */
 .tabla-desembolsos {
     width: 100%;
     font-size: 6pt !important; /* Reducir de 7.5pt a 6.5pt */
@@ -5214,7 +4740,6 @@ function obtenerDetalleDesembolsos() {
                 text-overflow: ellipsis;
             }
             
-            /* Definir anchos de columna específicos */
 .tabla-desembolsos .col-fecha { width: 8%; }
 .tabla-desembolsos .col-beneficiario { width: 15%; }
 .tabla-desembolsos .col-monto { width: 10%; }
@@ -5230,13 +4755,11 @@ function obtenerDetalleDesembolsos() {
                     width: 100% !important;
                 }
                 
-                /* Forzar orientación horizontal solo para la página con esta tabla */
                 
             }
         </style>
     `;
     
-    // Si no hay elementos de desembolso, mostrar tabla vacía
     if (!desembolsosPrint || desembolsosPrint.children.length === 0) {
         return `
             ${estiloTablaDesembolsos}
@@ -5268,13 +4791,10 @@ function obtenerDetalleDesembolsos() {
         `;
     }
     
-    // Construir tabla con desembolsos existentes
     let filasDesembolsos = '';
     Array.from(desembolsosPrint.children).forEach(fila => {
-        // Cada fila debe mantener las clases de columna para mantener la estructura
         const celdas = Array.from(fila.cells);
         
-        // Crear nueva fila con clases específicas para cada celda
         let nuevaFila = '<tr>';
         
         // Fecha
@@ -5324,9 +4844,7 @@ function obtenerDetalleDesembolsos() {
     `;
 }
     
-    // Obtener HTML para el detalle de gastos
     function obtenerDetalleGastos() {
-        // Buscar tabla en la pestaña de información
         let gastos = obtenerGastosLegales();
         let valorReembolso = obtenerValorReembolsar();
         
@@ -5355,14 +4873,11 @@ function obtenerDetalleDesembolsos() {
         `;
     }
     
-    // Obtener lista de gastos legales
     function obtenerGastosLegales() {
-        // Primero intentar obtener de la tabla de la pestaña de información
         const infoGastosTable = document.getElementById('gastos-legales-table');
         if (infoGastosTable && infoGastosTable.children.length > 0) {
             let filas = '';
             Array.from(infoGastosTable.children).forEach(fila => {
-                // Eliminar el botón de eliminar si existe
                 const filaClone = fila.cloneNode(true);
                 const btnEliminar = filaClone.querySelector('.eliminar-gasto');
                 if (btnEliminar) {
@@ -5373,7 +4888,6 @@ function obtenerDetalleDesembolsos() {
             return filas;
         }
         
-        // Si no está disponible, crear desde los gastos del panel visual
         const gastosLegales = document.querySelectorAll('#lista-gastos-legales > div:not(#no-gastos-legales)');
         
         if (!gastosLegales || gastosLegales.length === 0) {
@@ -5395,7 +4909,6 @@ function obtenerDetalleDesembolsos() {
             const nombreGasto = gasto.querySelector('.font-medium')?.textContent || 'Gasto legal';
             const detallesTexto = gasto.querySelector('.text-sm')?.textContent || '';
             
-            // Extraer datos usando expresiones regulares
             const cantidadMatch = detallesTexto.match(/Cantidad: (\d+)/);
             const honorariosMatch = detallesTexto.match(/Honorarios: Q([0-9,.]+)/);
             const reembolsoMatch = detallesTexto.match(/Reembolso: Q([0-9,.]+)/);
@@ -5405,19 +4918,16 @@ function obtenerDetalleDesembolsos() {
             const honorarios = honorariosMatch ? parseFloat(honorariosMatch[1].replace(',', '')) : 0;
             const reembolso = reembolsoMatch ? parseFloat(reembolsoMatch[1].replace(',', '')) : 0;
             const retenido = retenidoMatch ? parseFloat(retenidoMatch[1].replace(',', '')) : 0;
-            const reemborsoCTP = 0; // Valor por defecto
+            const reemborsoCTP = 0; 
             
-            // Total del gasto
             const total = honorarios + reembolso + retenido + reemborsoCTP;
             
-            // Actualizar totales
             totalHonorarios += honorarios;
             totalReembolso += reembolso;
             totalRetenido += retenido;
             totalReemborsoCTP += reemborsoCTP;
             granTotal += total;
             
-            // Formatear los valores para mostrar
             const honorariosStr = honorarios > 0 ? honorarios.toFixed(2) : '-';
             const reembolsoStr = reembolso > 0 ? reembolso.toFixed(2) : '-';
             const retenidoStr = retenido > 0 ? retenido.toFixed(2) : '-';
@@ -5437,7 +4947,6 @@ function obtenerDetalleDesembolsos() {
             `;
         });
         
-        // Añadir fila de totales
         filas += `
             <tr style="font-weight: bold; background-color: #f5f5f5;">
                 <td colspan="3">Totales</td>
@@ -5452,14 +4961,12 @@ function obtenerDetalleDesembolsos() {
         return filas;
     }
     
-    // Obtener valor a reembolsar
     function obtenerValorReembolsar() {
         const valorElement = document.getElementById('valor-reembolsar-legal');
         if (valorElement) {
             return valorElement.textContent;
         }
         
-        // Si no se encuentra, calcular de los gastos legales
         const gastosLegales = document.querySelectorAll('#lista-gastos-legales > div:not(#no-gastos-legales)');
         let totalReembolso = 0;
         
@@ -5475,7 +4982,6 @@ function obtenerDetalleDesembolsos() {
         return totalReembolso.toFixed(2);
     }
     
-    // Crear overlay de carga
     function crearOverlayCarga() {
         const overlay = document.createElement('div');
         overlay.style.position = 'fixed';
@@ -5512,7 +5018,6 @@ function obtenerDetalleDesembolsos() {
         mensaje.style.fontWeight = 'bold';
         mensaje.style.color = '#333';
         
-        // Crear animación
         const style = document.createElement('style');
         style.textContent = '@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }';
         document.head.appendChild(style);
@@ -5526,13 +5031,11 @@ function obtenerDetalleDesembolsos() {
 })();
 
 function activarTablaDesembolsos() {
-        // 1. Primero cambiar a la pestaña de formulario
         const formTab = document.querySelector('.tab-button[data-tab="form"]');
         if (formTab) {
             formTab.click();
         }
         
-        // 2. Asegurar que todos los pasos previos estén marcados como completados
         const progressSteps = document.querySelectorAll('.progress-step');
         progressSteps.forEach((step, index) => {
             if (index < 4) {
@@ -5542,18 +5045,15 @@ function activarTablaDesembolsos() {
             }
         });
         
-        // 3. Ocultar todos los pasos del formulario
         const formSteps = document.querySelectorAll('.form-step');
         formSteps.forEach(step => {
             step.classList.remove('active');
         });
         
-        // 4. Mostrar específicamente el paso 4 (índice 3)
         if (formSteps.length > 3) {
             formSteps[3].classList.add('active');
         }
         
-        // 5. Hacer scroll al contenedor de desembolsos
         const desembolsosContainer = document.getElementById('desembolsos-container');
         if (desembolsosContainer) {
             setTimeout(() => {
@@ -5562,16 +5062,12 @@ function activarTablaDesembolsos() {
         }
     }
 
-    // Al finalizar la carga del documento, conecta el botón con la función
     document.addEventListener('DOMContentLoaded', function() {
-        // Configurar el botón de desembolsos
         const desembolsosBtn = document.getElementById('desembolsos-btn');
         if (desembolsosBtn) {
-            // Aplicar estilos al botón
             desembolsosBtn.style.backgroundColor = '#FF6B00';
             desembolsosBtn.style.color = 'white';
             
-            // Agregar evento de clic
             desembolsosBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 activarTablaDesembolsos();
