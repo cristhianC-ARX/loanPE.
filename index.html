@@ -1126,6 +1126,11 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 										<option value="Asesor5">Lisbeth Aguilar</option>
 										<option value="Asesor6">Lorena Godinez</option>
 										<option value="Asesor7">Miguel Pú</option>
+                                        <option value="Asesor7">Yeison Quintanilla</option>
+                                        <option value="Asesor7">Luis Ajcu</option>
+                                        <option value="Asesor7">Pilar Salazar</option>
+                                        <option value="Asesor7">Yessica Leonardo</option>
+                                        <option value="Asesor7">Jorge Reinoso</option>
 										<option value="Asesor8">Rudy Monroy</option>
 										<option value="Asesor9">Sonia Guzman</option>
 										<option value="Asesor10">Veronica Sandoval</option>
@@ -1137,7 +1142,7 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 										<option value="Asesor11">Lidia Paná</option>
 										<option value="Asesor11">Jennifer Pop</option>
 										<option value="Asesor11">Sucely Cho</option>
-										<option value="Asesor11">Rigoberto Pop</option>
+                                        <option value="Asesor7">Mildred Suazo</option>
 										<option value="Asesor11">Oscar Tul</option>
 						</select>
 					</div>
@@ -3160,6 +3165,7 @@ function addNewDesembolsoRow() {
                 <option value="Desembolso 5">Desembolso 5</option>
                 <option value="Desembolso 6">Desembolso 6</option>
                 <option value="Compraventa">Compraventa</option>
+                <option value="Compraventa 2">Compraventa 2</option>
                 <option value="Pago de Hipoteca 1">Pago de Hipoteca 1</option>
                 <option value="Pago de Hipoteca 2">Pago de Hipoteca 2</option>
             </select>
@@ -3597,10 +3603,19 @@ function generateDesembolsosTable(totalAmount, currency, fechaSeleccionada) {
             if (beneficiario && monto > 0) {
                 hayDesembolsosValidos = true;
                 
-                let empresaDesembolso = document.getElementById('empresa').value;
-                if (tipoDesembolso === 'Compraventa') {
-                    empresaDesembolso = 'Tecnolease';
-                }
+                let empresaSeleccionada = document.getElementById('empresa').value;
+
+let empresaDesembolso = empresaSeleccionada; // Por defecto, muestra la empresa real
+
+// Solo aplicamos las reglas especiales si es Compraventa
+if (tipoDesembolso === 'Compraventa' ) {
+    if (empresaSeleccionada === 'Hollem, S.A.' || empresaSeleccionada === 'Coopexpress') {
+        empresaDesembolso = 'Coserfi';
+    } else if (empresaSeleccionada === 'Corporación Calem, S.A.') {
+        empresaDesembolso = 'Tecnolease';
+    }
+    // Si no coincide con ninguna, conserva empresaSeleccionada
+}
                 
                 const newRow = document.createElement('tr');
                 newRow.className = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
@@ -4716,46 +4731,49 @@ function obtenerDetalleDesembolsos() {
     
     const estiloTablaDesembolsos = `
         <style>
-.tabla-desembolsos {
-    width: 100%;
-    font-size: 6pt !important; /* Reducir de 7.5pt a 6.5pt */
-    table-layout: fixed;
-    page-break-inside: avoid;
-}
+            .tabla-desembolsos {
+                width: 100%;
+                font-size: 7.5pt;
+                table-layout: auto;
+                page-break-inside: avoid;
+            }
             
             .tabla-desembolsos th {
                 color: white !important;
                 font-weight: bold !important;
-                 padding: 2px !important; /* Reducir de 4px a 2px */
-                font-size: 6pt !important; /* Reducir de 7pt a 6pt */
+                padding: 4px;
+                font-size: 7pt;
                 white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
             }
             
             .tabla-desembolsos td {
-                padding: 2px !important; /* Reducir de 3px a 2px */
-                white-space: nowrap;
+                padding: 3px;
+                word-wrap: break-word;
+                white-space: normal !important;
+                max-width: 120px;
                 overflow: hidden;
-                text-overflow: ellipsis;
             }
             
-.tabla-desembolsos .col-fecha { width: 8%; }
-.tabla-desembolsos .col-beneficiario { width: 15%; }
-.tabla-desembolsos .col-monto { width: 10%; }
-.tabla-desembolsos .col-desembolso { width: 10%; }
-.tabla-desembolsos .col-concepto { width: 20%; }
-.tabla-desembolsos .col-banco { width: 15%; }
-.tabla-desembolsos .col-empresa { width: 12%; }
+            .col-fecha { width: 15%; }
+            .col-beneficiario { width: 20%; }
+            .col-monto { width: 12%; }
+            .col-desembolso { width: 15%; }
+            .col-concepto { width: 25%; }
+            .col-banco { width: 10%; }
+            .col-empresa { width: 10%; }
             
             @media print {
                 .tabla-desembolsos {
-                    font-size: 7pt !important;
+                    font-size: 8pt !important;
                     table-layout: fixed;
                     width: 100% !important;
                 }
                 
-                
+                .tabla-desembolsos td {
+                    white-space: normal !important;
+                    word-wrap: break-word;
+                    overflow: visible !important;
+                }
             }
         </style>
     `;
