@@ -1297,7 +1297,7 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                 </div>
                 
                 <div class="bg-white p-6 mb-6 card">
-                    <h2 class="text-xl font-bold mb-4 section-title">Hipotecas Previas</h2>
+                    <h2 class="text-xl font-bold mb-4 section-title">Traslado de Hipotecas</h2>
                     
                     <div class="mb-4">
                         <label class="inline-flex items-center">
@@ -1836,7 +1836,7 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 						</div>
 					</div>
 					
-					<h2 class="text-xl font-bold mb-6 mt-8 text-center bg-gray-800 text-white py-3">HIPOTECA PREVIA</h2>
+					<h2 class="text-xl font-bold mb-6 mt-8 text-center bg-gray-800 text-white py-3">TRASLADO DE HIPOTECAS</h2>
 					
 					<div id="info-hipotecas-container" class="space-y-4">
 					</div>
@@ -2709,7 +2709,7 @@ function updateInfoHipotecas(simboloMoneda) {
     if (!cancelaHipoteca) {
         const noHipotecas = document.createElement('div');
         noHipotecas.className = 'text-gray-500 text-center py-4';
-        noHipotecas.textContent = 'No se cancelan hipotecas previas';
+        noHipotecas.textContent = 'No se cancelan Traslado de Hipotecas';
         container.appendChild(noHipotecas);
         return;
     }
@@ -3189,6 +3189,7 @@ function addNewDesembolsoRow() {
                     <option value="Liquido a recibir">Liquido a recibir</option>
                     <option value="Acreedor Hipotecario">Acreedor Hipotecario</option>
                     <option value="Ret. Por IUSI">Ret. Por IUSI</option>
+                    <option value="Ret. Pago de servicios Luz/Agua">Ret. Por IUSI</option>
                     <option value="Ret. Por RGP y avaluo">Ret. Por RGP y avaluo</option>
                     <option value="Ret. Por Nomenclatura">Ret. Por Nomenclatura</option>
                 </select>
