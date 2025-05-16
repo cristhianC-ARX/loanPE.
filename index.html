@@ -2148,7 +2148,7 @@ function calcularDiferenciaCotizacion() {
                 const diffMS = ultimoDiaMS - fechaMS;
                 const diasRestantes = Math.floor(diffMS / (1000 * 60 * 60 * 24)) + 1;
                 
-                const diasTotalMes = ultimoDiaMes.getDate();
+                const diasTotalMes = 30;
                 
                 const interesMesCurso = (diasRestantes * capital * tasaDecimal / diasTotalMes) * -1;
                 
@@ -3261,7 +3261,7 @@ function calculateSubtotalDirectly() {
     
     const ultimoDiaMes = new Date(fechaActual.getFullYear(), fechaActual.getMonth() + 1, 0);
     const diasRestantes = ultimoDiaMes.getDate() - fechaActual.getDate() + 1;
-    const diasTotalMes = ultimoDiaMes.getDate();
+    const diasTotalMes = 30;
     const interesesMes = -(diasRestantes * capital * interesDecimal / diasTotalMes);
     
     const interesesAdelantados = -interesMonetario * mesesAdelantar;
