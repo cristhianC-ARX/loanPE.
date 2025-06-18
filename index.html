@@ -1526,6 +1526,12 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
             <label class="text-xs text-gray-500">Tipo de Préstamo</label>
             <div id="print-tipo-prestamo" class="font-medium p-1 border border-gray-200 bg-white rounded"></div>
           </div>
+
+       <div class="flex flex-col">
+  <label class="text-xs text-gray-500">Asesor</label>
+  <div id="print-asesor" class="font-medium p-1 border border-gray-200 bg-white rounded"></div>
+</div>
+
         </div>
         
         <div class="grid grid-cols-3 gap-2">
@@ -2524,6 +2530,14 @@ calculateFinancialBreakdown: function(params) {
             
             document.getElementById('calculate-btn').addEventListener('click', () => {
                 calculateMortgage();
+
+                                // Actualizar nombre del asesor en resumen
+const asesorSelect = document.getElementById('asesor');
+const printAsesor = document.getElementById('print-asesor');
+if (asesorSelect && printAsesor) {
+    printAsesor.textContent = asesorSelect.options[asesorSelect.selectedIndex].text;
+}
+
                 window.cotizacionCalculada = true;
                 
                 document.querySelector('[data-tab="summary"]').click();
@@ -3213,7 +3227,7 @@ function initializeEmptyFields() {
     const clienteFields = [
         'print-empresa', 'print-cliente', 'print-dpi', 'print-nit', 
         'print-tipo-prestamo', 'print-interes', 'print-interes-mensual',
-        'print-meses-adelantados', 'print-corretaje', 'print-gastos-admin', 'print-legal'
+        'print-meses-adelantados', 'print-corretaje', 'print-gastos-admin', 'print-legal', 'print-asesor'
     ];
     
     clienteFields.forEach(id => {
@@ -4020,6 +4034,7 @@ function generarContenidoHTML() {
     const corretaje = document.getElementById('print-corretaje')?.textContent || '';
     const gastosAdmin = document.getElementById('print-gastos-admin')?.textContent || '';
     const legal = document.getElementById('print-legal')?.textContent || '';
+    const asesor = document.getElementById('print-asesor')?.textContent || '';
     
     const fechaActual = new Date();
     const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -4492,6 +4507,12 @@ td {
                             <div class="info-label">Tipo de Préstamo</div>
                             <div class="info-value">${tipoPrestamo}</div>
                         </div>
+
+                        <div class="info-field">
+  <div class="info-label">Asesor</div>
+  <div class="info-value">${asesor}</div>
+</div>
+
                         
                         <div class="info-field">
                             <div class="info-label">% Interés</div>
