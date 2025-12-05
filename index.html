@@ -1081,8 +1081,6 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
                             </label>
                             <select id="empresa" class="input-field w-full">
 								<option value=""></option>
-                                <option value="Hollem, S.A.">Hollem, S.A.</option>
-                                <option value="Corporación Calem, S.A.">Corporación Calem, S.A.</option>
                                 <option value="Coopexpress">Coopexpress</option>
                             </select>
                         </div>
@@ -1132,34 +1130,28 @@ input:focus, textarea:focus, select:focus, [contenteditable="true"]:focus {
 						</label>
 						<select id="asesor" class="input-field w-full">
 							            <option value="">Seleccione...</option>
-										<option value="Asesor1">Brayan Gonzalez</option>
-										<option value="Asesor2">Edwin Sasvin</option>
-										<option value="Asesor3">Kevin De Leon</option>
-										<option value="Asesor4">Lorena Godinez</option>
-										<option value="Asesor5">Miguel Pú</option>
-										<option value="Asesor6">Carlos Alvarado</option>
-										<option value="Asesor7">Rudy Monroy</option>
-										<option value="Asesor8">Veronica Sandoval</option>
-										<option value="Asesor9">Gabriel Urrea</option>
-										<option value="Asesor10">Anahi Rodriguez</option>
-										<option value="Asesor11">Evelyn Roldán</option>
-										<option value="Asesor12">Lidia Paná</option>
-										<option value="Asesor13">Jennifer Pop</option>
-										<option value="Asesor14">Monica Castillo</option>
-										<option value="Asesor15">Ever Hernandez</option>
-										<option value="Asesor16">Oswaldo Carias</option>
-										<option value="Asesor17">Marcos Tizol</option>
-										<option value="Asesor18">Leonel Trocoli</option>
-							<option value="Asesor19">Maria Arce</option>
-							<option value="Asesor20">Jessica Marcis</option>
-							<option value="Asesor21">Milly Martinez</option>
-							<option value="Asesor22">YANESSA ELIZABETH DIAZ RUIZ</option>
-							<option value="Asesor23">Andony Ramos</option>
-														<option value="Asesor24">Elizabeth Diaz</option>
-							<option value="Asesor25">Edwin Lopez</option>
-							<option value="Asesor26">Nicolas Chuc</option>
-							<option value="Asesor27">Jorge Tiul</option>
-							<option value="Asesor28">Angela Son</option>
+										<option value="Asesor1">Lorena Godinez</option>
+										<option value="Asesor2">Carlos Alvarado</option>
+										<option value="Asesor3">Veronica Sandoval</option>
+										<option value="Asesor4">Anahi Rodriguez</option>
+										<option value="Asesor5">Evelyn Roldán</option>
+										<option value="Asesor6">Lidia Paná</option>
+										<option value="Asesor7">Jennifer Pop</option>
+										<option value="Asesor8">Monica Castillo</option>
+										<option value="Asesor9">Ever Hernandez</option>
+										<option value="Asesor10">Oswaldo Carias</option>
+										<option value="Asesor11">Leonel Trocoli</option>
+							<option value="Asesor12">Maria Arce</option>
+							<option value="Asesor13">Jessica Marcis</option>
+							<option value="Asesor14">Milly Martinez</option>
+							<option value="Asesor15">Andony Ramos</option>
+														<option value="Asesor16">Elizabeth Diaz</option>
+							<option value="Asesor17">Edwin Lopez</option>
+							<option value="Asesor18">Nicolas Chuc</option>
+							<option value="Asesor19">Jorge Tiul</option>
+							<option value="Asesor20">Angela Son</option>
+                            <option value="Asesor21">Cristhian Chen</option>
+                            <option value="Asesor2">Kevin Niz</option>
 						</select>
 					</div>
                     </div>
@@ -2465,8 +2457,17 @@ calculateFinancialBreakdown: function(params) {
         
         function initEventHandlers() {
             document.getElementById('empresa').addEventListener('change', function() {
-                document.getElementById('print-empresa').textContent = this.value.toUpperCase();
-                document.getElementById('header-empresa').textContent = this.value.toUpperCase();
+                const empresa = this.value;
+                const printEmpresa = document.getElementById('print-empresa');
+                const headerEmpresa = document.getElementById('header-empresa');
+                
+                if (empresa === 'Coopexpress') {
+                    printEmpresa.textContent = empresa.toUpperCase();
+                    headerEmpresa.textContent = empresa.toUpperCase();
+                } else {
+                    printEmpresa.textContent = '';
+                    headerEmpresa.textContent = '';
+                }
             });
             
             document.addEventListener('click', function(e) {
@@ -3431,7 +3432,11 @@ console.log("- Otros gastos:", otrosGastos);
     
     
    
-    if (empresa) document.getElementById('print-empresa').textContent = empresa;
+    if (empresa === 'Coopexpress') {
+        document.getElementById('print-empresa').textContent = empresa;
+    } else {
+        document.getElementById('print-empresa').textContent = '';
+    }
     if (cliente) document.getElementById('print-cliente').textContent = cliente;
     if (dpi) document.getElementById('print-dpi').textContent = dpi;
     if (nit) document.getElementById('print-nit').textContent = nit;
@@ -4545,7 +4550,7 @@ td {
                     <div class="letterhead-bg"></div>
                     <div class="letterhead-content">
                         <div>
-                            <div class="company-logo">${empresa}</div>
+                            ${empresa ? `<div class="company-logo">${empresa}</div>` : ''}
                            
                         </div>
                         
